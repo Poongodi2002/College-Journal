@@ -1,0 +1,104 @@
+.archives-page {
+  display: flex;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  gap: 20px;
+}
+
+/* Sidebar */
+.archives-sidebar {
+  width: 220px;
+  border-right: 2px solid #ddd;
+  padding-right: 15px;
+}
+
+.archives-sidebar h4 {
+  margin-bottom: 10px;
+}
+
+.archives-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.archives-sidebar li {
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.archives-sidebar li:hover,
+.archives-sidebar li.active {
+  background: #0056d2;
+  color: #fff;
+}
+
+/* Issue Content */
+.archives-content {
+  flex: 1;
+}
+
+.issue-header {
+  background: #f1f1f1;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  border: 1px solid #ddd;
+}
+
+.article-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.article-card h4 {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.doi-link {
+  font-size: 12px;
+  color: #0066cc;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.article-title {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.article-title a {
+  text-decoration: none;
+  color: #0056d2;
+}
+
+.article-title a:hover {
+  text-decoration: underline;
+}
+
+.authors {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.article-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.article-actions a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #0056d2;
+  font-weight: bold;
+}
+
+.article-actions a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,139 @@
+/* ==== TOP BAR ==== */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background: #fff;
+  color: #000;
+  border-bottom: 1px solid #eee;
+}
+
+.logo-sec {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 1px;
+}
+
+.college-info h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.college-info p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.college-info span {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.contact-info span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #000;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-left: 12px;
+  font-size: 18px;
+  color: #000;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0056d2;
+}
+
+/* ==== MAIN NAV ==== */
+.main-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #0066ff;
+  padding: 10px 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main-nav a,
+.dropbtn {
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Normal links hover */
+.main-nav a:hover {
+  background: #0047b3;
+  border-radius: 5px;
+}
+
+/* Top dropdown buttons (no hover background) */
+.dropbtn {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.dropbtn:hover {
+  background: none;
+  border-radius: 0;
+  text-decoration: underline;
+}
+
+/* ==== DROPDOWN MENU ==== */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  min-width: 160px;
+  background: #0066ff;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background: #0047b3;
+}

@@ -1,0 +1,99 @@
+.home-first-section {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88%;
+  background-image: url('backg.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: zoomInOut 10s infinite alternate ease-in-out;
+  z-index: -1;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+/* .main-home {
+  font-family: Arial, sans-serif;
+} */
+
+.home-first-section {
+  position: relative;
+  text-align: center;
+  padding: 40px;
+  background: url('/journal-bg.jpg') no-repeat center/cover;
+  color: white;
+  font-size: 25px
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 20%;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.sidebar h4 {
+  background: #0056d2;
+  color: #fff;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 5px 0;
+  border-bottom: 1px dotted #ddd;
+  font-size: 14px;
+}
+
+.center-content {
+  width: 55%;
+}
+
+.center-content h2 {
+  border-bottom: 2px solid #0056d2;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.services {
+  list-style: none;   /* remove default bullets */
+  padding-left: 0;
+}
+
+.services li::before {
+  content: "✔ ";      /* you can use "•", "→", "◆" etc */
+  color: #0056d2;     /* green check color */
+  font-weight: bold;
+}
+
