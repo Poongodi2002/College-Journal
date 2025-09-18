@@ -47,7 +47,7 @@ const Magazine = () => {
           <p>
             Students and faculty members are invited to contribute their articles, poems, 
             stories, essays, or artwork for the upcoming issue of the Kaamadhenu College Magazine.  
-            Please submit your entries to <a href="mailto:magazine@kaamadhenu.edu">magazine@kaamadhenu.edu</a>.
+            Please submit your entries to <a href="mailto:kasc@gmail.com">magazine@kaamadhenu.edu</a>.
           </p>
         </section>
       </div>

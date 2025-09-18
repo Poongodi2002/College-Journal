@@ -4,15 +4,14 @@ import './../../Styles/About.css';
 const About = () => {
   return (
     <>
-      {/* ===== Top Banner ===== */}
+      {/* Top Banner  */}
       <div className="home-first-section">
         <div className="background-image"></div>
         <h3>JOURNAL</h3>
       </div>
 
-      {/* ===== About Content ===== */}
+      {/*  About Content  */}
       <div className="about-container">
-        {/* Intro paragraph */}
         <p>
           Kaamadhenu College, a premier educational institution, has a clearly identified 
           vision and mission. Teaching–learning is at the core of this institutional ethos, 
@@ -23,6 +22,8 @@ const About = () => {
 
         {/* Vision & Objectives Section */}
         <div className="about-sections">
+
+
           {/* Vision */}
           <div className="vision">
             <h2> VISION</h2>

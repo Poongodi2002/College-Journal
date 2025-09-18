@@ -8,6 +8,7 @@ import Archives from './Components/Archives/Archives'
 import Journal from "./Components/Publications/Journal";
 import Magazine from "./Components/Publications/Magazine";
 import AimsAndScope from "./Components/About/AimsAndScope";
+import Contact from "./Components/Contact/Contact";
 
 
 const App=()=>{
@@ -21,6 +22,7 @@ const App=()=>{
   <Route path="/archives" element={<Archives />} />
   <Route path="/publication/journal" element={<Journal />} />
   <Route path="/publication/magazine" element={<Magazine />} />
+  <Route path="/contact" element={<Contact />} />
 </Routes>
 
       <Footer />
