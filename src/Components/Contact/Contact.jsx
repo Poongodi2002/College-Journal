@@ -1,5 +1,4 @@
 import React from "react";
-import { FaUser, FaPhoneAlt, FaEnvelope, FaBuilding } from "react-icons/fa";
 import "../../Styles/Contact.css";
 
 const Contact = () => {
@@ -14,7 +13,7 @@ const Contact = () => {
     <div className="contact-container">
       <div className="contact-info">
         <div className="info-box">
-          <h3><FaUser /> Principal & Address</h3>
+          <h3> Principal & Address</h3>
           <p>
             Kaamadhenu College of Education <br />
             Kaamadhenu Nagar, D.G. Pudur Post, <br />
@@ -24,7 +23,7 @@ const Contact = () => {
         </div>
 
         <div className="info-box">
-          <h3><FaBuilding /> Institution Details</h3>
+          <h3> Institution Details</h3>
           <p>
             Recognized by National Council for Teacher Education (NCTE) <br />
             Affiliated to Tamil Nadu Teachers Education University <br />
@@ -33,7 +32,7 @@ const Contact = () => {
         </div>
 
         <div className="info-box">
-          <h3><FaPhoneAlt /> Contact Numbers</h3>
+          <h3>Contact Numbers</h3>
           <p>
             Phone: 04295 223943 <br />
             Email: kascbed@gmail.com
