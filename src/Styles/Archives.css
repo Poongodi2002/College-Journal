@@ -5,7 +5,6 @@
   gap: 20px;
 }
 
-/* Sidebar */
 .archives-sidebar {
   width: 220px;
   border-right: 2px solid #ddd;
@@ -33,7 +32,6 @@
   color: #fff;
 }
 
-/* Issue Content */
 .archives-content {
   flex: 1;
 }

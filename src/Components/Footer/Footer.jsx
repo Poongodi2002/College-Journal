@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* College Info */}
+        
         <div className="footer-col">
           <h4>KASC</h4>
           <p>
@@ -29,7 +29,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Information Links */}
         <div className="footer-col">
           <h4>INFORMATIONS FOR</h4>
           <ul>
@@ -48,7 +47,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact */}
         <div className="footer-col">
           <h4>CONTACT</h4>
           <p>
@@ -65,7 +63,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Social Media */}
         <div className="footer-col">
           <h4>FOLLOW US</h4>
           <div className="social-links">

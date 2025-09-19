@@ -4,13 +4,11 @@ import './../../Styles/About.css';
 const About = () => {
   return (
     <>
-      {/* Top Banner  */}
       <div className="home-first-section">
         <div className="background-image"></div>
-        <h3>JOURNAL</h3>
+        <h3>ABOUT US</h3>
       </div>
 
-      {/*  About Content  */}
       <div className="about-container">
         <p>
           Kaamadhenu College, a premier educational institution, has a clearly identified 
@@ -20,11 +18,9 @@ const About = () => {
           leadership, and management for the holistic development of its students.
         </p>
 
-        {/* Vision & Objectives Section */}
         <div className="about-sections">
 
 
-          {/* Vision */}
           <div className="vision">
             <h2> VISION</h2>
             <div className="vision-box">
@@ -41,7 +37,6 @@ const About = () => {
             </div>
           </div>
 
-          {/* Objectives */}
           <div className="objectives">
             <h2> OUR OBJECTIVES</h2>
             <img src="/image-history.jpg" alt="Student Research" />

@@ -9,10 +9,10 @@ const Archives = () => {
     <>
     <div className="home-first-section">
         <div className="background-image"></div>
-        <h3>JOURNAL</h3>
+        <h3>ARCHIVESL</h3>
       </div>
       <div className="archives-page">
-      {/* Sidebar with Volumes */}
+
       <aside className="archives-sidebar">
         <h4>Volumes</h4>
         <ul>
@@ -27,7 +27,6 @@ const Archives = () => {
           ))}
         </ul>
       </aside>
-    {/* Issue Content */}
       <div className="archives-content">
         {selectedVolume.issues.map((issue, idx) => (
           <div key={idx} className="archive-issue">

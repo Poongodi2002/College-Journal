@@ -13,11 +13,10 @@ const Journal = () => {
       
 
       <div className="journal-container">
-        {/* Title Section */}
+        
         <h2>Kaamadhenu College Journal of Education</h2>
         <p><strong>ISSN (Online): 2589-XXXX | ISSN (Print): 2589-YYYY</strong></p>
 
-        {/* About Section */}
         <section className="journal-section">
           <h3>About the Journal</h3>
           <p>
@@ -29,7 +28,6 @@ const Journal = () => {
           </p>
         </section>
 
-        {/* Aims and Scope */}
         <section className="journal-section">
           <h3>Aims & Scope</h3>
           <p>
@@ -40,7 +38,6 @@ const Journal = () => {
           </p>
         </section>
 
-        {/* Publication Details */}
         <section className="journal-section">
           <h3>Publication Details</h3>
           <ul>
@@ -52,7 +49,6 @@ const Journal = () => {
           </ul>
         </section>
 
-        {/* Editorial Board */}
         <section className="journal-section">
           <h3>Editorial Board</h3>
           <p><strong>Editor-in-Chief:</strong> Dr. R. Kumar</p>
@@ -60,7 +56,6 @@ const Journal = () => {
           <p><strong>Editorial Members:</strong> Dr. Priya D, Dr. Meena K, Prof. Arun V</p>
         </section>
 
-        {/* Author Guidelines */}
         <section className="journal-section">
           <h3>Author Guidelines</h3>
           <p>
@@ -71,7 +66,6 @@ const Journal = () => {
           </p>
         </section>
 
-        {/* Policies */}
         <section className="journal-section">
           <h3>Plagiarism Policy</h3>
           <p>

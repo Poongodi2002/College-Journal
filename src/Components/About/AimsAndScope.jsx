@@ -5,15 +5,12 @@ const Aims = () => {
   return (
     <><div className="home-first-section">
         <div className="background-image"></div>
-        <h3>JOURNAL</h3>
+        <h3>AIMS AND SCOPE</h3>
       </div>
     
    
     <div className="aims-container">
-      {/* Banner */}
       
-
-      {/* Intro */}
       <p className="intro">
         The <strong style={{color: '#0056d2'}}>Kaamadhenu College Journal of Education</strong> is dedicated to 
         advancing knowledge and research in the field of education, particularly 
@@ -22,7 +19,6 @@ const Aims = () => {
         to share innovative ideas, practices, and scholarly work.
       </p>
 
-      {/* Aims Section */}
       <div className="aims-section">
         <h3>Our Aims</h3>
         <ul>
@@ -33,7 +29,6 @@ const Aims = () => {
         </ul>
       </div>
 
-      {/* Scope Section */}
       <div className="scope-section">
         <h3>Scope of the Journal</h3>
         <ul>

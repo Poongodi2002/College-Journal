@@ -87,13 +87,13 @@
 }
 
 .services {
-  list-style: none;   /* remove default bullets */
+  list-style: none;  
   padding-left: 0;
 }
 
 .services li::before {
-  content: "✔ ";      /* you can use "•", "→", "◆" etc */
-  color: #0056d2;     /* green check color */
+  content: "✔ ";     
+  color: #0056d2;  
   font-weight: bold;
 }
 

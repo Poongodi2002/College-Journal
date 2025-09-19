@@ -5,15 +5,14 @@ import './../../Styles/Home.css';
 const Home = () => {
   return (
     <div className="main-home">
-      {/* ====== Banner Section ====== */}
+      
       <div className="home-first-section">
         <div className="background-image"></div>
-        <h3>JOURNAL</h3>
+        <h3>KAAMADHENU JOURNAL SITE</h3>
       </div>
 
-      {/* ====== Content Section ====== */}
       <div className="home-content">
-        {/* Left Sidebar - For Author */}
+
         <div className="sidebar left">
           <h4>For Author</h4>
           <ul>
@@ -28,7 +27,7 @@ const Home = () => {
           </ul>
         </div>
 
-        {/* Center - Journal Welcome Section */}
+
         <div className="center-content">
           <h2>Welcome to Kaamadhenu E-Journal</h2>
           <p>
@@ -52,7 +51,6 @@ const Home = () => {
 
         </div>
 
-        {/* Right Sidebar - Recent Articles */}
         <div className="sidebar right">
           <h4>Recent Articles</h4>
           <ul>

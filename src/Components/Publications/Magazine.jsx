@@ -12,7 +12,6 @@ const Magazine = () => {
       
 
       <div className="magazine-container">
-        {/* About Section */}
         <section className="magazine-section">
           <h2>Kaamadhenu College Magazine</h2>
           <p>
@@ -23,7 +22,6 @@ const Magazine = () => {
           </p>
         </section>
 
-        {/* Editions */}
         <section className="magazine-section">
           <h3>Past Editions</h3>
           <div className="magazine-grid">
@@ -41,7 +39,6 @@ const Magazine = () => {
           </div>
         </section>
 
-        {/* Contribution Section */}
         <section className="magazine-section">
           <h3>Contribute to the Magazine</h3>
           <p>

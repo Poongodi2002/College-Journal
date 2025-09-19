@@ -1,112 +1,81 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  FaPhoneAlt,
-  FaFacebookF,
-  FaTwitter,
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-  FaBars,
-  FaTimes,
-} from "react-icons/fa";
+import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import "../../Styles/Navbar.css";
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
-  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleDropdown = (menu) => {
     setOpenDropdown(openDropdown === menu ? null : menu);
   };
 
-  const closeMenu = () => {
-    setMenuOpen(false);
-    setOpenDropdown(null);
-  };
-
-  // Close dropdowns if clicked outside
-  useEffect(() => {
-    const handleClickOutside = () => setOpenDropdown(null);
-    document.addEventListener("click", handleClickOutside);
-    return () => document.removeEventListener("click", handleClickOutside);
-  }, []);
-
   return (
     <header>
-      {/* ==== TOP BAR ==== */}
       <div className="top-bar">
-        <div className="logo-sec">
-          <img src="/LOGO.jpeg" alt="Kaamadhenu Logo" className="logo" />
-        </div>
-
-        <div className="contact-info">
+        <div className="top-left">
           <span>
-            <FaPhoneAlt /> 04295 223943, 80125 21226
-          </span>
-          <span>
-            <MdEmail /> kamadhenu@college.com
+            <IoLocationSharp /> Kaamadhenu Nagar, D.G. Pudur Post, Sathyamangalam - 638503, Erode DT , Tamil Nadu
           </span>
         </div>
-
-        <div className="social-icons">
+        <div className="top-center">
+          <span>
+            <MdEmail /> kascbed@gmail.com
+          </span>
+          <span>
+            <FaPhoneAlt /> 04295 223943
+          </span>
+        </div>
+        <div className="top-right">
+          <a href="#"><FaYoutube /></a>
           <a href="#"><FaFacebookF /></a>
-          <a href="#"><FaTwitter /></a>
-          <a href="#"><FaGithub /></a>
           <a href="#"><FaInstagram /></a>
-          <a href="#"><FaLinkedinIn /></a>
         </div>
       </div>
 
-      {/* ==== MAIN NAV ==== */}
-      <nav className="main-nav">
-        <button
-          className="menu-toggle"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <FaTimes /> : <FaBars />}
-        </button>
-
-        <div className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <Link to="/" onClick={closeMenu}>Home</Link>
-
-          {/* About Dropdown */}
-          <div className="dropdown" onClick={(e) => e.stopPropagation()}>
-            <button
-              className="dropbtn"
-              onClick={() => toggleDropdown("about")}
-            >
-              About ▼
-            </button>
-            {openDropdown === "about" && (
-              <div className="dropdown-content">
-                <Link to="/about/aboutus" onClick={closeMenu}>About Us</Link>
-                <Link to="/about/aims" onClick={closeMenu}>Aims</Link>
-              </div>
-            )}
-          </div>
-
-          <Link to="/archives" onClick={closeMenu}>Archives</Link>
-
-          {/* Publications Dropdown */}
-          <div className="dropdown" onClick={(e) => e.stopPropagation()}>
-            <button
-              className="dropbtn"
-              onClick={() => toggleDropdown("publication")}
-            >
-              Publications ▼
-            </button>
-            {openDropdown === "publication" && (
-              <div className="dropdown-content">
-                <Link to="/publication/journal" onClick={closeMenu}>Journal</Link>
-                <Link to="/publication/magazine" onClick={closeMenu}>Magazine</Link>
-              </div>
-            )}
-          </div>
-
-          <Link to="/contact" onClick={closeMenu}>Contact</Link>
+      <div className="main-header">
+        <img src="/LOGO.jpeg" alt="Kaamadhenu Logo" className="logo" />
+        <div className="college-info">
+          <h2>KAAMADHENU COLLEGE OF EDUCATION</h2>
+          <p>
+            Recognized by National Council for Teacher Education & Affiliated to the Tamil Nadu Teachers Education University <br />
+            Sathyamangalam – 638503, Erode DT.
+          </p>
         </div>
+      </div>
+
+      <nav className="nav-bar">
+        <Link to="/">Home</Link>
+
+        <div
+          className={`dropdown ${openDropdown === "about" ? "show" : ""}`}
+          onMouseEnter={() => toggleDropdown("about")}
+          onMouseLeave={() => setOpenDropdown(null)}
+        >
+          <button className="dropbtn">About ▼</button>
+          <div className="dropdown-content">
+            <Link to="/about/aboutus">About Us</Link>
+            <Link to="/about/aims">Aims</Link>
+           
+          </div>
+        </div>
+         <Link to="/archives">Archives</Link>
+
+        <div
+          className={`dropdown ${openDropdown === "publications" ? "show" : ""}`}
+          onMouseEnter={() => toggleDropdown("publications")}
+          onMouseLeave={() => setOpenDropdown(null)}
+        >
+          <button className="dropbtn">Publications ▼</button>
+          <div className="dropdown-content">
+            <Link to="/publication/journal">Journal</Link>
+            <Link to="/publication/magazine">Magazine</Link>
+          </div>
+        </div>
+
+        <Link to="/contact">Contact</Link>
       </nav>
     </header>
   );
