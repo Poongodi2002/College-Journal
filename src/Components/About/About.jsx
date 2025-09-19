@@ -39,7 +39,7 @@ const About = () => {
 
           <div className="objectives">
             <h2> OUR OBJECTIVES</h2>
-            <img src="/image-history.jpg" alt="Student Research" />
+            <img src="/abt.jpeg" alt="Student Research" />
             <ul>
               <li>
                 To provide an inclusive educational platform and enhance the strength 

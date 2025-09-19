@@ -45,9 +45,9 @@
 }
 
 .objectives img {
-  width: 100%;
-  max-width: 320px;
-  border: 6px solid #0056d2;
+  
+  max-width: 600px;
+  border: 6px solid #ebeff5;
   margin-bottom: 15px;
   border-radius: 5px;
 }
