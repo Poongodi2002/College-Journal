@@ -48,33 +48,15 @@ const Navbar = () => {
 
       <nav className="nav-bar">
         <Link to="/">Home</Link>
-
-        <div
-          className={`dropdown ${openDropdown === "about" ? "show" : ""}`}
-          onMouseEnter={() => toggleDropdown("about")}
-          onMouseLeave={() => setOpenDropdown(null)}
-        >
-          <button className="dropbtn">About ▼</button>
-          <div className="dropdown-content">
-            <Link to="/about/aboutus">About Us</Link>
-            <Link to="/about/aims">Aims</Link>
-           
-          </div>
-        </div>
-         <Link to="/archives">Archives</Link>
-
-        <div
-          className={`dropdown ${openDropdown === "publications" ? "show" : ""}`}
-          onMouseEnter={() => toggleDropdown("publications")}
-          onMouseLeave={() => setOpenDropdown(null)}
-        >
-          <button className="dropbtn">Publications ▼</button>
-          <div className="dropdown-content">
-            <Link to="/publication/journal">Journal</Link>
-            <Link to="/publication/magazine">Magazine</Link>
-          </div>
-        </div>
-
+        <Link to="/aims">Aims and Scope</Link> 
+        <Link to='/guideline'>Guidelines for Author</Link>
+        <Link to='/callofpapers'>Call of Papers</Link>
+        <Link to='/articleandsubmission'>Article and Submission</Link>
+        <Link to='/editorialboard'>Editorial Board</Link>
+             <Link to="/archives">Archives</Link>
+        <Link to={'/ethicsandpolicy'}>Ethics And Policy</Link>
+        <Link to='/downloads'>Downloads</Link>
+        <Link to='/membership'>Membership</Link>
         <Link to="/contact">Contact</Link>
       </nav>
     </header>

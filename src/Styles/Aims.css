@@ -1,55 +1,76 @@
+/* Main container */
 .aims-container {
-  padding: 40px 60px;
-  font-family: 'Arial', sans-serif;
-  line-height: 1.8;
-  color: #333;
-  background: #fafafa;
-}
-
-.aims-banner {
-  background: #0056d2;
-  color: white;
+  max-width: 1200px;
+  margin: 40px auto;
   padding: 20px;
-  text-align: center;
-  border-radius: 5px;
-  margin-bottom: 30px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.7;
 }
 
-.intro {
-  font-size: 16px;
-  margin-bottom: 30px;
+/* Intro Section */
+.aims-intro {
+  background: #f9f9f9;
+  padding: 25px;
+  border-left: 6px solid #0077cc;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.aims-section, .scope-section {
-  margin-bottom: 30px;
-  background: white;
-  padding: 20px 25px;
-  border-radius: 5px;
-  border-left: 6px solid #0056d2;
-  box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+/* Alternating Sections */
+.aims-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
 }
 
-.aims-section h3, .scope-section h3 {
+.aims-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.aims-image {
+  flex: 1;
+}
+
+.aims-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.aims-text {
+  flex: 1;
+}
+
+.aims-text h3 {
+  font-size: 1.4rem;
   margin-bottom: 15px;
-  color: #0056d2;
-  font-size: 20px;
+  color: #0077cc;
 }
 
-.aims-section ul, .scope-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.aims-section ul li, .scope-section ul li {
-  margin-bottom: 12px;
+.aims-text ul {
+  list-style: disc;
   padding-left: 20px;
-  position: relative;
 }
 
-.aims-section ul li::before, .scope-section ul li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  color: #0056d2;
-  font-weight: bold;
+.aims-text li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .aims-section,
+  .aims-section.reverse {
+    flex-direction: column;
+  }
+
+  .aims-image img {
+    width: 100%;
+  }
 }

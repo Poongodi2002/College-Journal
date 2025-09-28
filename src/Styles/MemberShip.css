@@ -1,0 +1,65 @@
+.membership-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  line-height: 1.7;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #34495e;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.intro {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.membership-section h4 {
+  margin-top: 15px;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+ul, ol {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+ul li, ol li {
+  margin-bottom: 6px;
+}
+
+.benefits li {
+  list-style-type: disc;
+}
+
+.steps li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

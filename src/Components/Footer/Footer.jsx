@@ -36,13 +36,16 @@ const Footer = () => {
               <Link to='/'>Home</Link>
             </li>
             <li>
-              <Link to='/'>Home</Link>
+              <Link to='/aims'>Aims and Scope</Link>
             </li>
             <li>
-               <Link to='/'>Home</Link>
+               <Link to='/guideline'>Guidelines for Author</Link>
             </li>
             <li>
-               <Link to='/'>Home</Link>
+               <Link to='/callofpapers'>Call of Papers</Link>
+            </li>
+            <li>
+              <Link to='/articleandsubmission'>Article and Submission</Link>
             </li>
           </ul>
         </div>

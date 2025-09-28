@@ -1,0 +1,94 @@
+/* Main Container */
+.editorial-board {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  line-height: 1.8;
+}
+
+/* Main Title */
+.editorial-board h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #005fa3;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #0077cc;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Section Styling */
+.editorial-board > div {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #eef6ff;
+  border-left: 6px solid #0077cc;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.editorial-board > div:hover {
+  transform: translateY(-2px);
+}
+
+/* Section Headings */
+.editorial-board h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #005fa3;
+}
+
+/* Editor Name */
+.editorial-board p:first-of-type {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+/* List of Members */
+.editorial-board ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.editorial-board ul li {
+  margin-bottom: 15px;
+}
+
+/* Member Emails */
+.editorial-board a {
+  color: #0077cc;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.editorial-board a:hover {
+  color: #005fa3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .editorial-board {
+    padding: 20px;
+  }
+
+  .editorial-board h2 {
+    font-size: 1.6rem;
+  }
+
+  .editorial-board h3 {
+    font-size: 1.2rem;
+  }
+
+  .editorial-board p:first-of-type {
+    font-size: 1rem;
+  }
+}
+ 
