@@ -4,17 +4,16 @@ import './../../Styles/ArticleAndSubmission.css';
 const ArticleAndSubmission = () => {
   return (
     <div className="article-container">
-      {/* Intro */}
+      
       <div className="article-intro">
         <p>
-          The <strong>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> 
+          The <strong style={{color:'#0077cc'}}>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> 
           accepts manuscripts through its online submission system as well as by email. 
           Authors are requested to follow the submission process carefully to ensure 
           smooth and timely review of their papers.
         </p>
       </div>
 
-      {/* Steps */}
       <div className="article-steps">
         <h2>Steps for Submission</h2>
         <ol>
@@ -69,7 +68,6 @@ const ArticleAndSubmission = () => {
         </ol>
       </div>
 
-      {/* Notes */}
       <div className="article-notes">
         <h2>Important Notes</h2>
         <ul>

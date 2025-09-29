@@ -1,4 +1,4 @@
-/* Main container */
+
 .callofpapers-container {
   max-width: 1000px;
   margin: 40px auto;
@@ -8,7 +8,6 @@
   line-height: 1.7;
 }
 
-/* Intro section */
 .callofpapers-intro {
   background: #e6f0ff;
   padding: 25px;
@@ -33,7 +32,7 @@
   font-size: 1.1rem;
 }
 
-/* Details Section */
+
 .callofpapers-details {
   background: #fff;
   padding: 25px;
@@ -57,7 +56,6 @@
   font-size: 1rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .callofpapers-container {
     padding: 15px;

@@ -15,31 +15,32 @@ const Downloads = () => {
       <ul className="downloads-list-numbered">
         <li>
           Current Issue (PDF) –{" "}
-          <a href="#" className="downloads-link">Download Current Issue</a>
+          <a href="javascript_tutorial.pdf" className="downloads-link" download>Download Current Issue</a>
         </li>
         <li>
           Previous Issues (Archives) –{" "}
-          <a href="#" className="downloads-link">Go to Archives</a>
+          <a href="javascript_tutorial.pdf" className="downloads-link" download>Go to Archives</a>
         </li>
         <li>
           Author Guidelines (PDF) –{" "}
-          <a href="#" className="downloads-link">Download Guidelines for Authors</a>
+          <a href="javascript_tutorial.pdf" className="downloads-link" download>Download Guidelines for Authors</a>
         </li>
         <li>
           Manuscript Template (Word File) –{" "}
-          <a href="#" className="downloads-link">Download Manuscript Template</a>
+          <a href="javascript_tutorial.pdf" className="downloads-link" download>Download Manuscript Template</a>
         </li>
         <li>
           Copyright Transfer Form (PDF) –{" "}
-          <a href="#" className="downloads-link">Download Form</a>
+          <a href="javascript_tutorial.pdf" className="downloads-link" download>Download Form</a>
         </li>
         <li>
           Publication Ethics & Policy (PDF) –{" "}
-          <a href="#" className="downloads-link">Download Ethics Policy</a>
+          <a href="javascript_tutorial.pdf" className="downloads-link" download>Download Ethics Policy</a>
         </li>
         <li>
           Membership Form (Word/PDF) –{" "}
-          <a href="#" className="downloads-link">Download Membership Form</a>
+          <a href="javascript_tutorial.pdf" className="downloads-link" download>Download Membership Form </a>
+
         </li>
       </ul>
 

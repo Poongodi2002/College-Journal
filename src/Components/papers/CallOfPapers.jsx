@@ -7,7 +7,7 @@ const CallOfPapers = () => {
       <div className="callofpapers-intro">
         <h2>Call for Papers</h2>
         <p>
-          The <strong>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> 
+          The <strong style={{color:'#0077cc'}}>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> 
           invites research scholars, academicians, teacher educators, practitioners, and professionals 
           to submit their original research papers, case studies, and review articles for publication.
         </p>

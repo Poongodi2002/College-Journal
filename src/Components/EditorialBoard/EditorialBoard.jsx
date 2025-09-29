@@ -7,7 +7,6 @@ const EditorialBoard = () => {
       <div className="editorial-board p-6 leading-relaxed">
         <h2 className="text-2xl font-bold mb-4">Editorial Board</h2>
 
-        {/* Chief Editor */}
         <div className="mb-6">
           <h3 className="text-xl font-semibold">Chief Editor</h3>
           <p>Dr. P. Malar Selvi</p>
@@ -15,7 +14,6 @@ const EditorialBoard = () => {
           <p>Email: <a href="mailto:jsecretary@kascsathy.ac.in" className="text-blue-600 underline">jsecretary@kascsathy.ac.in</a></p>
         </div>
 
-        {/* Associate Editor */}
         <div className="mb-6">
           <h3 className="text-xl font-semibold">Associate Editor</h3>
           <p>Dr. S. Ramprabhu</p>
@@ -23,14 +21,12 @@ const EditorialBoard = () => {
           <p>Email: <a href="mailto:principalkce@kascsathy.ac.in" className="text-blue-600 underline">principalkce@kascsathy.ac.in</a></p>
         </div>
 
-        {/* Editorial Advisor */}
         <div className="mb-6">
           <h3 className="text-xl font-semibold">Editorial Advisor</h3>
           <p>Dr. S. Rajaguru</p>
           <p>Principal (Retd), Sri Ramakrishna Mission Vidyalaya College of Education, Coimbatore, Tamil Nadu.</p>
         </div>
 
-        {/* Editorial Board Members */}
         <div className="mb-6">
           <h3 className="text-xl font-semibold">Editorial Board Members</h3>
           <ul className="list-disc list-inside space-y-3">

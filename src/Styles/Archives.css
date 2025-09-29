@@ -1,4 +1,4 @@
-/* Main Container */
+
 .archives-container {
   max-width: 900px;
   margin: 40px auto;
@@ -11,66 +11,188 @@
   line-height: 1.8;
 }
 
-/* Paragraph Intro */
+
 .archives-intro {
   font-size: 1rem;
   margin-bottom: 20px;
 }
 
-/* Strong Text */
 .archives-intro strong {
   color: #005fa3;
   font-weight: 600;
 }
 
-/* Section Titles */
-.archives-section-title {
-  font-size: 1.25rem;
-  font-weight: 600;
+
+.archives-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: auto;
+  display: block;
+}
+
+.archives-table th, 
+.archives-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.archives-table th {
+  background-color: #f4f4f4;
+}
+
+
+.archives-link {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.archives-link:hover {
+  background-color: #0056b3;
+}
+
+
+.archives-notes {
+  margin-top: 30px;
+}
+
+.archives-notes h3 {
+  font-size: 1.2rem;
   color: #0077cc;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   border-left: 4px solid #0077cc;
   padding-left: 10px;
 }
 
-/* Lists */
-.archives-issues-list,
-.archives-notes-list {
+.archives-notes ul {
   list-style-type: disc;
   padding-left: 25px;
-  margin-bottom: 20px;
 }
 
-.archives-issues-list li,
-.archives-notes-list li {
-  margin-bottom: 10px;
+.archives-notes li {
+  margin-bottom: 8px;
   font-size: 1rem;
 }
 
-/* Links */
-.archives-link {
-  color: #0077cc;
-  text-decoration: underline;
-  transition: color 0.3s ease;
+
+.pdf-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 900px;
+  max-height: 90vh;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  padding: 15px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+  overflow: auto;
+  border-radius: 10px;
 }
 
-.archives-link:hover {
-  color: #005fa3;
+.pdf-modal iframe {
+  width: 100%;
+  height: 80vh;
+  border: none;
+  border-radius: 6px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+.close-btn {
+  float: right;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+@media (max-width: 992px) {
   .archives-container {
     padding: 20px;
   }
 
-  .archives-section-title {
+  .archives-table th, 
+  .archives-table td {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  .archives-notes h3 {
     font-size: 1.1rem;
   }
 
-  .archives-intro,
-  .archives-issues-list li,
-  .archives-notes-list li {
+  .archives-notes li {
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .archives-container {
+    padding: 15px;
+  }
+
+  .archives-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .archives-table th, 
+  .archives-table td {
+    white-space: nowrap;
+    padding: 6px;
+    font-size: 0.9rem;
+  }
+
+  .archives-notes h3 {
+    font-size: 1rem;
+  }
+
+  .archives-notes li {
+    font-size: 0.9rem;
+  }
+
+  .pdf-modal {
+    width: 95%;
+    max-height: 85vh;
+    padding: 10px;
+  }
+
+  .pdf-modal iframe {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .archives-container {
+    padding: 10px;
+  }
+
+  .archives-table th, 
+  .archives-table td {
+    font-size: 0.85rem;
+    padding: 5px;
+  }
+
+  .archives-notes h3 {
+    font-size: 0.95rem;
+  }
+
+  .archives-notes li {
+    font-size: 0.85rem;
+  }
+
+  .pdf-modal iframe {
+    height: 60vh;
   }
 }

@@ -1,4 +1,4 @@
-/* Main Container */
+
 .editorial-board {
   max-width: 1000px;
   margin: 40px auto;
@@ -9,9 +9,9 @@
   border-radius: 10px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   line-height: 1.8;
+  word-wrap: break-word;
 }
 
-/* Main Title */
 .editorial-board h2 {
   text-align: center;
   font-size: 2rem;
@@ -22,7 +22,6 @@
   padding-bottom: 5px;
 }
 
-/* Section Styling */
 .editorial-board > div {
   margin-bottom: 30px;
   padding: 20px;
@@ -36,7 +35,6 @@
   transform: translateY(-2px);
 }
 
-/* Section Headings */
 .editorial-board h3 {
   font-size: 1.4rem;
   font-weight: 600;
@@ -44,14 +42,12 @@
   color: #005fa3;
 }
 
-/* Editor Name */
 .editorial-board p:first-of-type {
   font-weight: 600;
   font-size: 1.1rem;
   margin-bottom: 5px;
 }
 
-/* List of Members */
 .editorial-board ul {
   list-style-type: disc;
   padding-left: 20px;
@@ -62,18 +58,27 @@
   margin-bottom: 15px;
 }
 
-/* Member Emails */
 .editorial-board a {
   color: #0077cc;
   text-decoration: underline;
   transition: color 0.3s ease;
+  word-break: break-word; 
 }
 
 .editorial-board a:hover {
   color: #005fa3;
 }
 
-/* Responsive Design */
+@media (max-width: 1024px) {
+  .editorial-board {
+    padding: 25px;
+  }
+
+  .editorial-board h2 {
+    font-size: 1.8rem;
+  }
+}
+
 @media (max-width: 768px) {
   .editorial-board {
     padding: 20px;
@@ -81,14 +86,41 @@
 
   .editorial-board h2 {
     font-size: 1.6rem;
+    text-align: center;
   }
 
   .editorial-board h3 {
     font-size: 1.2rem;
   }
 
-  .editorial-board p:first-of-type {
-    font-size: 1rem;
+  .editorial-board p,
+  .editorial-board li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .editorial-board ul {
+    padding-left: 15px;
   }
 }
- 
+
+@media (max-width: 480px) {
+  .editorial-board {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .editorial-board h2 {
+    font-size: 1.4rem;
+  }
+
+  .editorial-board h3 {
+    font-size: 1.1rem;
+  }
+
+  .editorial-board p,
+  .editorial-board li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}

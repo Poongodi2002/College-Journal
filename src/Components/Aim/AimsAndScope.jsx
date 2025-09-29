@@ -4,10 +4,10 @@ import './../../Styles/Aims.css';
 const AimsAndScope = () => {
   return (
     <div className="aims-container">
-      {/* Intro Section */}
+
       <div className="aims-intro">
         <p>
-          The <strong>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> 
+          The <strong style={{color:'#0077cc'}}>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> 
           is a peer-reviewed academic journal devoted to promoting excellence in education, 
           teacher training, and professional development. The journal aims to provide a platform 
           for scholars, researchers, teacher educators, practitioners, and policymakers to share 
@@ -16,7 +16,6 @@ const AimsAndScope = () => {
         </p>
       </div>
 
-      {/* Section 1 - Image Left / Text Right */}
       <div className="aims-section">
         <div className="aims-image">
           <img src="/abt.jpeg" alt="About Journal" />
@@ -34,7 +33,8 @@ const AimsAndScope = () => {
         </div>
       </div>
 
-      {/* Section 2 - Image Right / Text Left */}
+
+
       <div className="aims-section reverse">
         <div className="aims-image">
           <img src="/campus02.jpg" alt="Campus" />

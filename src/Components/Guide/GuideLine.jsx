@@ -4,14 +4,13 @@ import './../../Styles/GuideLine.css';
 const GuideLine = () => {
   return (
     <div className="guideline-container">
-      {/* Intro */}
+      
       <div className="guideline-intro">
         <p>
-          The <strong>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> invites original and unpublished research articles, reviews, case studies, and reflections in the field of education. Authors are requested to follow the guidelines below before submitting their manuscripts.
+          The <strong style={{color:'#0077cc'}}>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> invites original and unpublished research articles, reviews, case studies, and reflections in the field of education. Authors are requested to follow the guidelines below before submitting their manuscripts.
         </p>
       </div>
 
-      {/* Sections */}
       <div className="guideline-sections">
         <div className="guideline-section">
           <h3>1. Manuscript Preparation</h3>
@@ -65,7 +64,7 @@ const GuideLine = () => {
         <div className="guideline-section">
           <h3>6. Submission Procedure</h3>
           <ul>
-            <li>Authors should submit their manuscripts electronically through the Article Submission System available on the journal website or send your paper to: <strong>principalkce@kascsathy.ac.in</strong></li>
+            <li>Authors should submit their manuscripts electronically through the Article Submission System available on the journal website or send your paper to: <strong style={{color:'#0077cc'}}>principalkce@kascsathy.ac.in</strong></li>
             <li>The journal strictly adheres to ethical standards in research and publication.</li>
           </ul>
         </div>
@@ -73,7 +72,7 @@ const GuideLine = () => {
         <div className="guideline-section">
           <h3>7. Contact for Submission</h3>
           <p>For any queries or submission assistance, please contact:</p>
-          <p><strong>Email:</strong> jsecretary@kascsathy.ac.in | principalkce@kascsathy.ac.in</p>
+          <p><strong style={{color:'#0077cc'}} >Email:</strong > jsecretary@kascsathy.ac.in | principalkce@kascsathy.ac.in</p>
         </div>
       </div>
     </div>

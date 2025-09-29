@@ -1,4 +1,4 @@
-/* Main Container */
+
 .downloads-container {
   max-width: 900px;
   margin: 40px auto;
@@ -11,7 +11,6 @@
   line-height: 1.8;
 }
 
-/* Page Title */
 .downloads-title {
   font-size: 2rem;
   font-weight: 700;
@@ -19,13 +18,12 @@
   margin-bottom: 20px;
 }
 
-/* Intro Paragraph */
+
 .downloads-intro {
   font-size: 1rem;
   margin-bottom: 20px;
 }
 
-/* Section Titles */
 .downloads-section-title {
   font-size: 1.25rem;
   font-weight: 600;
@@ -35,7 +33,6 @@
   padding-left: 10px;
 }
 
-/* Numbered List */
 .downloads-list-numbered {
   list-style-type: decimal;
   padding-left: 25px;
@@ -47,7 +44,6 @@
   font-size: 1rem;
 }
 
-/* Bulleted List */
 .downloads-list-bulleted {
   list-style-type: disc;
   padding-left: 25px;
@@ -59,7 +55,6 @@
   font-size: 1rem;
 }
 
-/* Links */
 .downloads-link {
   color: #0077cc;
   text-decoration: none;
@@ -69,13 +64,11 @@
   text-decoration: underline;
 }
 
-/* Strong text */
 .downloads-intro strong {
   color: #0077cc;
   font-weight: 600;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .downloads-container {
     padding: 20px;

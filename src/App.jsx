@@ -13,8 +13,6 @@ import Downloads from "./Components/Downloads/Downloads";
 import Membership from "./Components/Membership/Membership";
 
 import Archives from './Components/Archives/Archives'
-import Journal from "./Components/Publications/Journal";
-import Magazine from "./Components/Publications/Magazine";
 import Contact from "./Components/Contact/Contact";
 
 
@@ -35,8 +33,6 @@ const App=()=>{
   <Route path='/membership' element={<Membership />} />
 
   <Route path="/archives" element={<Archives />} />
-  <Route path="/publication/journal" element={<Journal />} />
-  <Route path="/publication/magazine" element={<Magazine />} />
   <Route path="/contact" element={<Contact />} />
 </Routes>
 

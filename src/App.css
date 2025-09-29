@@ -1,0 +1,9 @@
+
+body {
+  font-family: 'Work Sans', Arial, sans-serif;
+  
+  line-height: 1.6; 
+}
+* {
+  font-family: inherit;
+}

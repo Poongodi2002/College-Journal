@@ -3,17 +3,15 @@ import { Link } from "react-router-dom";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi"; 
 import "../../Styles/Navbar.css";
 
 const Navbar = () => {
-  const [openDropdown, setOpenDropdown] = useState(null);
-
-  const toggleDropdown = (menu) => {
-    setOpenDropdown(openDropdown === menu ? null : menu);
-  };
-
+  const [menuOpen, setMenuOpen] = useState(false);
+ 
   return (
     <header>
+    
       <div className="top-bar">
         <div className="top-left">
           <span>
@@ -35,6 +33,7 @@ const Navbar = () => {
         </div>
       </div>
 
+   
       <div className="main-header">
         <img src="/LOGO.jpeg" alt="Kaamadhenu Logo" className="logo" />
         <div className="college-info">
@@ -44,16 +43,25 @@ const Navbar = () => {
             Sathyamangalam – 638503, Erode DT.
           </p>
         </div>
+
+        
+        <button 
+          className="hamburger"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <GiHamburgerMenu /> 
+        </button>
       </div>
 
-      <nav className="nav-bar">
+      
+      <nav className={`nav-bar ${menuOpen ? "open" : ""}`}>
         <Link to="/">Home</Link>
         <Link to="/aims">Aims and Scope</Link> 
         <Link to='/guideline'>Guidelines for Author</Link>
         <Link to='/callofpapers'>Call of Papers</Link>
         <Link to='/articleandsubmission'>Article and Submission</Link>
         <Link to='/editorialboard'>Editorial Board</Link>
-             <Link to="/archives">Archives</Link>
+        <Link to="/archives">Archives</Link>
         <Link to={'/ethicsandpolicy'}>Ethics And Policy</Link>
         <Link to='/downloads'>Downloads</Link>
         <Link to='/membership'>Membership</Link>

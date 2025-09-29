@@ -1,3 +1,4 @@
+
 .contact-container {
   max-width: 800px;
   margin: 40px auto;
@@ -20,19 +21,76 @@
   font-size: 1.1rem;
   margin-bottom: 15px;
   color: #34495e;
+  text-align: center;
 }
 
-p {
+.contact-container p {
   margin-bottom: 12px;
   font-size: 1rem;
   color: #555;
 }
 
-a {
+.contact-container a {
   color: #0077cc;
   text-decoration: none;
+  word-break: break-word;
 }
 
-a:hover {
+.contact-container a:hover {
   text-decoration: underline;
+}
+
+
+@media (max-width: 1024px) {
+  .contact-container {
+    padding: 25px 20px;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .journal-name {
+    font-size: 1rem;
+  }
+
+  .contact-container p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px 15px;
+  }
+
+  .contact-title {
+    font-size: 1.6rem;
+  }
+
+  .journal-name {
+    font-size: 0.95rem;
+  }
+
+  .contact-container p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 15px 10px;
+  }
+
+  .contact-title {
+    font-size: 1.4rem;
+  }
+
+  .journal-name {
+    font-size: 0.9rem;
+  }
+
+  .contact-container p {
+    font-size: 0.85rem;
+  }
 }

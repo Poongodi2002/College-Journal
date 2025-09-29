@@ -1,4 +1,4 @@
-/* Main container */
+
 .guideline-container {
   max-width: 1000px;
   margin: 40px auto;
@@ -8,7 +8,7 @@
   line-height: 1.7;
 }
 
-/* Intro section */
+
 .guideline-intro {
   background: #f0f8ff;
   padding: 25px;
@@ -19,14 +19,14 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* Sections container - 2 columns */
+
 .guideline-sections {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 20px;
 }
 
-/* Individual Section */
+
 .guideline-section {
   padding: 20px;
   background: #fff;
@@ -39,14 +39,14 @@
   transform: translateY(-5px);
 }
 
-/* Section titles */
+
 .guideline-section h3 {
   font-size: 1.3rem;
   color: #0077cc;
   margin-bottom: 15px;
 }
 
-/* Lists */
+
 .guideline-section ul {
   padding-left: 20px;
   list-style-type: disc;
@@ -57,19 +57,22 @@
   font-size: 1rem;
 }
 
-/* Paragraphs */
 .guideline-section p {
   font-size: 1rem;
   margin-bottom: 8px;
 }
 
-/* Make 7th section span full width (centered) */
 .guideline-section:nth-child(7) {
   grid-column: 1 / -1;
   text-align: center;
 }
 
-/* Responsive */
+@media (max-width: 1024px) {
+  .guideline-sections {
+    grid-template-columns: 1fr; 
+  }
+}
+
 @media (max-width: 768px) {
   .guideline-container {
     padding: 15px;
@@ -77,5 +80,30 @@
 
   .guideline-section {
     padding: 15px;
+  }
+
+  .guideline-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .guideline-section li,
+  .guideline-section p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .guideline-intro {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .guideline-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .guideline-section li,
+  .guideline-section p {
+    font-size: 0.9rem;
   }
 }

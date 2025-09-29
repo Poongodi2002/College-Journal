@@ -52,7 +52,7 @@ const Footer = () => {
 
         <div className="footer-col">
           <h4>CONTACT</h4>
-          <p>
+          <p> 
             <FaMapMarkerAlt /> Bannari Amman College Opp
           </p>
           <p>

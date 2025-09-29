@@ -1,4 +1,4 @@
-/* Main container */
+
 .aims-container {
   max-width: 1200px;
   margin: 40px auto;
@@ -7,8 +7,8 @@
   color: #333;
   line-height: 1.7;
 }
+ 
 
-/* Intro Section */
 .aims-intro {
   background: #f9f9f9;
   padding: 25px;
@@ -19,7 +19,7 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* Alternating Sections */
+
 .aims-section {
   display: flex;
   align-items: center;
@@ -63,14 +63,90 @@
   font-size: 1rem;
 }
 
-/* Responsive Design */
-@media (max-width: 900px) {
-  .aims-section,
-  .aims-section.reverse {
-    flex-direction: column;
+
+.aims-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+
+.aims-intro {
+  background: #f9f9f9;
+  padding: 25px;
+  border-left: 6px solid #0077cc;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.aims-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.aims-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.aims-image {
+  flex: 1;
+}
+
+.aims-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.aims-text {
+  flex: 1;
+}
+
+.aims-text h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #0077cc;
+}
+
+.aims-text ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.aims-text li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  .aims-section {
+    flex-direction: column;   
+    text-align: center;       
   }
 
-  .aims-image img {
-    width: 100%;
+  .aims-section.reverse {
+    flex-direction: column;   
+  }
+
+  .aims-text {
+    margin-top: 20px;
+  }
+
+  .aims-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .aims-text li {
+    font-size: 0.95rem;
   }
 }

@@ -8,7 +8,7 @@ const Home = () => {
       
       <div className="home-first-section">
         <div className="background-image"></div>
-        <h3>KAAMADHENU JOURNAL SITE</h3>
+        <h3 >KAAMADHENU JOURNAL SITE</h3>
       </div>
 
       <div className="home-content">
@@ -16,20 +16,21 @@ const Home = () => {
         <div className="sidebar left">
           <h4>For Author</h4>
           <ul>
-            <Link to='/'><li>▶ Home</li></Link>
-            <Link to='/'><li>▶ Home</li></Link>
-            <Link to='/'><li>▶ Home</li></Link>
-            <Link to='/'><li>▶ Home</li></Link>
-            <Link to='/'><li>▶ Home</li></Link>
-            <Link to='/'><li>▶ Home</li></Link>
-            <Link to='/'><li>▶ Home</li></Link>
-           <Link to='/'> <li>▶ Home</li></Link>
+             <Link to="/aims"><li>▶ Aims and Scope</li></Link> 
+                    <Link to='/guideline'><li>▶ Guidelines for Author</li></Link>
+                    <Link to='/callofpapers'><li>▶ Call of Papers</li></Link>
+                    <Link to='/articleandsubmission'><li>▶ Article and Submission</li></Link>
+                    <Link to='/editorialboard'><li>▶ Editorial Board</li></Link>
+                    <Link to="/archives"><li>▶ Archives</li></Link>
+                    <Link to={'/ethicsandpolicy'}><li>▶ Ethics And Policy</li></Link>
+                    <Link to='/downloads'><li>▶ Downloads</li></Link>
+                 
           </ul>
         </div>
 
 
         <div className="center-content">
-          <h2>Welcome to Kaamadhenu E-Journal</h2>
+          <h2 style={{color:'#0077cc'}}>Welcome to Kaamadhenu E-Journal</h2>
           <p>
             Kaamadhenu Journal is a rapid processing journal that publishes 
             original research articles as well as review articles in several 
@@ -42,7 +43,7 @@ const Home = () => {
             to facilitate academic and research activities.
           </p>
 
-          <h3>Our Journal Services</h3>
+          <h3 style={{color:'#0077cc'}}>Our Journal Services</h3>
           <ul className="services">
   <li>Quick response after receiving paper.</li>
   <li>Secure process for paper publication after receiving publication fees and copyright form.</li>
