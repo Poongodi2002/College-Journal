@@ -30,7 +30,10 @@ const Home = () => {
 
 
         <div className="center-content">
-          <h2 style={{color:'#0077cc'}}>Welcome to Kaamadhenu E-Journal</h2>
+          <h2 style={{ color: '#1eaaf1' }}>
+  Welcome to Kaamadhenu E-Journal
+</h2>
+
           <p>
             Kaamadhenu Journal is a rapid processing journal that publishes 
             original research articles as well as review articles in several 
@@ -43,7 +46,7 @@ const Home = () => {
             to facilitate academic and research activities.
           </p>
 
-          <h3 style={{color:'#0077cc'}}>Our Journal Services</h3>
+          <h3 style={{ color: '#1eaaf1' }}>Our Journal Services</h3>
           <ul className="services">
   <li>Quick response after receiving paper.</li>
   <li>Secure process for paper publication after receiving publication fees and copyright form.</li>

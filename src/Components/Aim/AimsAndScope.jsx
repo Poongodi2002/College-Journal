@@ -7,7 +7,7 @@ const AimsAndScope = () => {
 
       <div className="aims-intro">
         <p>
-          The <strong style={{color:'#0077cc'}}>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> 
+          The <strong style={{color:'#00a9f4'}}>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> 
           is a peer-reviewed academic journal devoted to promoting excellence in education, 
           teacher training, and professional development. The journal aims to provide a platform 
           for scholars, researchers, teacher educators, practitioners, and policymakers to share 

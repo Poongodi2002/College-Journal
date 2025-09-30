@@ -11,7 +11,7 @@
 .callofpapers-intro {
   background: #e6f0ff;
   padding: 25px;
-  border-left: 6px solid #0077cc;
+  border-left: 6px solid #1eaaf1;
   border-radius: 10px;
   margin-bottom: 35px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -24,7 +24,7 @@
 
 .callofpapers-intro h2 {
   font-size: 1.8rem;
-  color: #0077cc;
+  color: #1eaaf1;
   margin-bottom: 15px;
 }
 
@@ -42,7 +42,7 @@
 
 .callofpapers-details h3 {
   font-size: 1.5rem;
-  color: #0077cc;
+  color: #1eaaf1;
   margin-bottom: 15px;
 }
 

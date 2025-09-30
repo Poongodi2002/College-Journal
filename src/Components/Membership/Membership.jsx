@@ -6,7 +6,7 @@ const Membership = () => {
     <div className="membership-container">
       <h2 className="title">Membership</h2>
       <p className="intro">
-        The <strong>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> 
+        The <strong style={{color:'#1eaaf1'}}>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> 
         invites academicians, researchers, professionals, and students to become members of the 
         journal community. Membership provides opportunities for collaboration, academic exchange, 
         and access to journal resources.
@@ -17,7 +17,7 @@ const Membership = () => {
         <h4>1. Annual Membership</h4>
         <ul>
           <li>Valid for one year from the date of registration.</li>
-          <li><strong>Benefits:</strong>
+          <li><strong style={{color:'#158dc9ff'}}>Benefits:</strong>
             <ul>
               <li>Access to all journal issues.</li>
               <li>Eligibility to publish articles with discounted publication fees.</li>
@@ -29,7 +29,7 @@ const Membership = () => {
         <h4>2. Lifetime Membership</h4>
         <ul>
           <li>One-time registration, valid for lifetime.</li>
-          <li><strong>Benefits:</strong>
+          <li><strong style={{color:'#158dc9ff'}}>Benefits:</strong>
             <ul>
               <li>Free access to journal issues.</li>
               <li>Priority consideration for publication.</li>
@@ -42,7 +42,7 @@ const Membership = () => {
         <h4>3. Institutional Membership</h4>
         <ul>
           <li>For universities, colleges, research institutes, and libraries.</li>
-          <li><strong>Benefits:</strong>
+          <li><strong style={{color:'#158dc9ff'}}>Benefits:</strong>
             <ul>
               <li>Access to multiple users within the institution.</li>
               <li>Listing of the institution as a partner organization on the journal website.</li>

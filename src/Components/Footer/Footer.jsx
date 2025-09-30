@@ -18,19 +18,31 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         
+        {/* Contact Information Column */}
         <div className="footer-col">
           <h4>KASC</h4>
           <p>
-            Kamadhenu Nagar D.G. Pudur Post, Sathyamangalam-
+            <FaMapMarkerAlt />
+            Kaamadhenu Nagar, D.G. Pudur Post, 
             <br />
-            Athani-Aapakoodal -Erode Road,
+            Sathyamangalam - 638503,
             <br />
-            Sathyamangalam, Tamil Nadu 638503
+            Erode DT, Tamil Nadu
+          </p>
+          <p>
+            <FaPhone /> +91 97509 94108
+          </p>
+          <p>
+            <FaFax /> +91 4295 - 223743
+          </p>
+          <p>
+            <FaEnvelope /> kascbed@gmail.com
           </p>
         </div>
 
+        {/* Quick Links Column 1 */}
         <div className="footer-col">
-          <h4>INFORMATIONS FOR</h4>
+          <h4>QUICK LINKS</h4>
           <ul>
             <li>
               <Link to='/'>Home</Link>
@@ -39,10 +51,10 @@ const Footer = () => {
               <Link to='/aims'>Aims and Scope</Link>
             </li>
             <li>
-               <Link to='/guideline'>Guidelines for Author</Link>
+              <Link to='/guideline'>Guidelines for Author</Link>
             </li>
             <li>
-               <Link to='/callofpapers'>Call of Papers</Link>
+              <Link to='/callofpapers'>Call for Papers</Link>
             </li>
             <li>
               <Link to='/articleandsubmission'>Article and Submission</Link>
@@ -50,38 +62,45 @@ const Footer = () => {
           </ul>
         </div>
 
+        {/* Quick Links Column 2 */}
         <div className="footer-col">
-          <h4>CONTACT</h4>
-          <p> 
-            <FaMapMarkerAlt /> Bannari Amman College Opp
-          </p>
-          <p>
-            <FaEnvelope /> office@kasccathy.ac.in
-          </p>
-          <p>
-            <FaPhone /> +91 97509 94108
-          </p>
-          <p>
-            <FaFax /> +91 4295 - 223743
-          </p>
+          <h4>MORE LINKS</h4>
+          <ul>
+            <li>
+              <Link to='/editorialboard'>Editorial Board</Link>
+            </li>
+            <li>
+              <Link to='/archives'>Archives</Link>
+            </li>
+            <li>
+              <Link to='/ethicsandpolicy'>Ethics and Policy</Link>
+            </li>
+            <li>
+              <Link to='/downloads'>Downloads</Link>
+            </li>
+            <li>
+              <Link to='/contact'>Contact Us</Link>
+            </li>
+          </ul>
         </div>
 
+        {/* Social Media Column */}
         <div className="footer-col">
           <h4>FOLLOW US</h4>
           <div className="social-links">
-            <a href="#">
+            <a href="#" aria-label="Facebook">
               <FaFacebookF />
             </a>
-            <a href="#">
+            <a href="#" aria-label="Twitter">
               <FaTwitter />
             </a>
-            <a href="#">
+            <a href="#" aria-label="Google">
               <FaGoogle />
             </a>
-            <a href="#">
+            <a href="#" aria-label="Instagram">
               <FaInstagram />
             </a>
-            <a href="#">
+            <a href="#" aria-label="GitHub">
               <FaGithub />
             </a>
           </div>
@@ -90,7 +109,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <p>
-          © 2020 Copyright: <a href="#">Kasc.com</a>
+          Copyright ©2024 - All rights reserved
         </p>
       </div>
     </footer>

@@ -7,7 +7,7 @@ const ArticleAndSubmission = () => {
       
       <div className="article-intro">
         <p>
-          The <strong style={{color:'#0077cc'}}>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> 
+          The <strong style={{color:'#1eaaf1'}}>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> 
           accepts manuscripts through its online submission system as well as by email. 
           Authors are requested to follow the submission process carefully to ensure 
           smooth and timely review of their papers.
@@ -18,7 +18,7 @@ const ArticleAndSubmission = () => {
         <h2>Steps for Submission</h2>
         <ol>
           <li>
-            <strong>Prepare Your Manuscript</strong>
+            <strong style={{color:'#1eaaf1'}}>Prepare Your Manuscript</strong>
             <ul>
               <li>Ensure that your paper follows the Guidelines for Authors (formatting, referencing, plagiarism policy, etc.).</li>
               <li>Include a Title Page with author details (name, designation, institution, email).</li>
@@ -27,7 +27,7 @@ const ArticleAndSubmission = () => {
           </li>
 
           <li>
-            <strong>Submit the Paper</strong>
+            <strong style={{color:'#1eaaf1'}}>Submit the Paper</strong>
             <ul>
               <li>Online Submission: (Insert journal’s web submission link here, if available).</li>
               <li>Email Submission: Manuscripts may be sent directly to: 
@@ -37,14 +37,14 @@ const ArticleAndSubmission = () => {
           </li>
 
           <li>
-            <strong>Acknowledgement of Receipt</strong>
+            <strong style={{color:'#1eaaf1'}}>Acknowledgement of Receipt</strong>
             <ul>
               <li>Authors will receive an acknowledgement email within 7 working days confirming receipt of the manuscript.</li>
             </ul>
           </li>
 
           <li>
-            <strong>Peer Review Process</strong>
+            <strong style={{color:'#1eaaf1'}}>Peer Review Process</strong>
             <ul>
               <li>All submissions will undergo a double-blind peer review process.</li>
               <li>Review results (acceptance / revision / rejection) will be communicated to authors within 4–6 weeks.</li>
@@ -52,14 +52,14 @@ const ArticleAndSubmission = () => {
           </li>
 
           <li>
-            <strong>Final Submission</strong>
+            <strong style={{color:'#1eaaf1'}}>Final Submission</strong>
             <ul>
               <li>Authors whose papers are accepted will be asked to submit the final revised version in MS Word format along with a copyright transfer form.</li>
             </ul>
           </li>
 
           <li>
-            <strong>Publication</strong>
+            <strong style={{color:'#1eaaf1'}}>Publication</strong>
             <ul>
               <li>Accepted papers will be published in the next available issue of the journal.</li>
               <li>Authors will be notified via email once their paper is published online.</li>

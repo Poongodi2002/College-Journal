@@ -58,7 +58,7 @@
 }
 
 .sidebar h4 {
-  background: #0056d2;
+  background: #1eaaf1;
   color: #fff;
   padding: 8px;
   margin-bottom: 10px;
@@ -93,7 +93,7 @@
 
 .services li::before {
   content: "✔ ";     
-  color: #0056d2;  
+  color: #1eaaf1; 
   font-weight: bold;
 }
 
@@ -161,6 +161,23 @@
 
   .services li::before {
     content: "• "; 
-    color: #0056d2;
+   color: #1eaaf1;
+  }
+}
+/* Hide "For Author" sidebar on tablets and mobiles */
+@media (max-width: 1024px) {
+  .sidebar.left {
+    display: none;
+  }
+
+  .home-content {
+    flex-direction: column;
+    margin: 20px;
+    gap: 15px;
+  }
+
+  .sidebar.right,
+  .center-content {
+    width: 100%;
   }
 }

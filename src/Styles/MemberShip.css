@@ -14,14 +14,14 @@
   font-weight: bold;
   margin-bottom: 15px;
   text-align: center;
-  color: #2c3e50;
+  color: #1eaaf1;
 }
 
 .subtitle {
   font-size: 1.4rem;
   margin-top: 25px;
   margin-bottom: 10px;
-  color: #34495e;
+  color: #1eaaf1;
   border-bottom: 2px solid #ddd;
   padding-bottom: 5px;
 }
@@ -34,7 +34,7 @@
 
 .membership-section h4 {
   margin-top: 15px;
-  color: #2c3e50;
+  color: #1eaaf1;
   font-size: 1.2rem;
 }
 
@@ -56,7 +56,7 @@ ul li, ol li {
 }
 
 a {
-  color: #0077cc;
+  color: #1eaaf1;
   text-decoration: none;
 }
 

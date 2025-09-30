@@ -4,9 +4,9 @@ import "../../Styles/Contact.css";
 const Contact = () => {
   return (
     <div className="contact-container">
-      <h2 className="contact-title" style={{color:'#0077cc'}}>Contact Us</h2>
+      <h2 className="contact-title" style={{color:'#1eaaf1'}}>Contact Us</h2>
       <p className="journal-name">
-        <strong style={{color:'#0077cc'}}>Kaamadhenu Journal of Education Training and Development (KJETD)</strong>
+        <strong style={{color:'#1eaaf1'}}>Kaamadhenu Journal of Education Training and Development (KJETD)</strong>
       </p>
       <p>
         <strong>Address:</strong> Kaamadhenu College of Education, Sathyamangalam, 

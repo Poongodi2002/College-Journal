@@ -12,7 +12,7 @@
 .article-intro {
   background-color: #eef6ff;
   padding: 20px;
-  border-left: 6px solid #0077cc;
+  border-left: 6px solid #00a9f4;
   border-radius: 8px;
   margin-bottom: 30px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -25,7 +25,7 @@
 
 .article-steps h2 {
   font-size: 1.6rem;
-  color: #0077cc;
+  color: #00a9f4;
   margin-bottom: 15px;
 }
 
@@ -49,7 +49,7 @@
 
 
 .article-steps a {
-  color: #0077cc;
+  color: #00a9f4;
   text-decoration: underline;
 }
 

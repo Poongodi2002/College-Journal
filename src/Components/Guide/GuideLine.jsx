@@ -7,7 +7,7 @@ const GuideLine = () => {
       
       <div className="guideline-intro">
         <p>
-          The <strong style={{color:'#0077cc'}}>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> invites original and unpublished research articles, reviews, case studies, and reflections in the field of education. Authors are requested to follow the guidelines below before submitting their manuscripts.
+          The <strong style={{color:'#1eaaf1'}}>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> invites original and unpublished research articles, reviews, case studies, and reflections in the field of education. Authors are requested to follow the guidelines below before submitting their manuscripts.
         </p>
       </div>
 
@@ -72,7 +72,7 @@ const GuideLine = () => {
         <div className="guideline-section">
           <h3>7. Contact for Submission</h3>
           <p>For any queries or submission assistance, please contact:</p>
-          <p><strong style={{color:'#0077cc'}} >Email:</strong > jsecretary@kascsathy.ac.in | principalkce@kascsathy.ac.in</p>
+          <p><strong style={{color:'#1eaaf1'}} >Email:</strong > jsecretary@kascsathy.ac.in | principalkce@kascsathy.ac.in</p>
         </div>
       </div>
     </div>
