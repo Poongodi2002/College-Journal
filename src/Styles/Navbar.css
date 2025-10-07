@@ -75,31 +75,31 @@
   line-height: 1.4;
 }
 
-/* ================= NAVBAR - DESKTOP SINGLE ROW ================= */
+
 .nav-bar {
   background: #00a9f4;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 5px;
-  flex-wrap: nowrap; /* Prevent wrapping on desktop */
-  overflow-x: auto; /* Allow horizontal scrolling if needed */
-  white-space: nowrap; /* Prevent text wrapping */
+  flex-wrap: nowrap; 
+  overflow-x: auto; 
+  white-space: nowrap; 
   transition: all 0.3s ease-in-out;
-  gap: 2px; /* Reduced gap to fit more links */
+  gap: 2px; 
 }
 
 .nav-bar a {
   color: white;
   text-decoration: none;
-  font-size: 13px; /* Slightly smaller font */
-  padding: 6px 8px; /* Reduced padding */
+  font-size: 13px; 
+  padding: 6px 8px; 
   transition: all 0.3s;
   white-space: nowrap;
   border-radius: 3px;
   text-align: center;
-  flex-shrink: 0; /* Prevent links from shrinking */
-  min-width: max-content; /* Ensure text doesn't break */
+  flex-shrink: 0; 
+  min-width: max-content; 
 }
 
 .nav-bar a:hover {
@@ -107,7 +107,7 @@
   color: white;
 }
 
-/* ================= HAMBURGER ================= */
+
 .hamburger {
   display: none;
   font-size: 24px;
@@ -123,9 +123,7 @@
   transform: scale(1.1);
 }
 
-/* ================= RESPONSIVE DESIGN ================= */
 
-/* ---------- Large Desktop (1400px+) ---------- */
 @media (min-width: 1400px) {
   .nav-bar a {
     font-size: 14px;
@@ -134,7 +132,7 @@
   }
 }
 
-/* ---------- Standard Desktop (1201px - 1399px) ---------- */
+
 @media (max-width: 1399px) {
   .nav-bar a {
     font-size: 13px;
@@ -142,7 +140,6 @@
   }
 }
 
-/* ---------- Small Desktop (1025px - 1200px) ---------- */
 @media (max-width: 1200px) {
   .nav-bar {
     padding: 8px 3px;
@@ -159,7 +156,6 @@
   }
 }
 
-/* ---------- Large Tablets (993px - 1024px) ---------- */
 @media (max-width: 1024px) {
   .top-bar {
     font-size: 13px;
@@ -190,7 +186,6 @@
   }
 }
 
-/* ---------- Tablets (769px - 992px) ---------- */
 @media (max-width: 992px) {
   .nav-bar {
     padding: 6px 1px;
@@ -202,7 +197,6 @@
   }
 }
 
-/* ---------- Small Tablets (601px - 768px) ---------- */
 @media (max-width: 768px) {
   .top-bar {
     display: none;
@@ -226,17 +220,14 @@
     font-size: 11px;
   }
 
-  /* Show hamburger and hide desktop nav */
   .hamburger {
     display: block;
   }
 
-  /* Hide desktop nav on mobile */
   .nav-bar:not(.open) {
     display: none;
   }
 
-  /* Mobile nav styles */
   .nav-bar.open {
     display: flex;
     flex-direction: column;
@@ -274,7 +265,6 @@
   }
 }
 
-/* ---------- Mobile Phones (481px - 600px) ---------- */
 @media (max-width: 600px) {
   .main-header {
     flex-direction: row;
@@ -310,7 +300,7 @@
   }
 }
 
-/* ---------- Small Mobile Phones (320px - 480px) ---------- */
+
 @media (max-width: 480px) {
   .main-header {
     padding: 8px 12px;
@@ -340,7 +330,6 @@
   }
 }
 
-/* ---------- Very Small Mobile Phones (max-width: 320px) ---------- */
 @media (max-width: 320px) {
   .main-header {
     flex-wrap: nowrap;
@@ -360,7 +349,6 @@
   }
 }
 
-/* Custom scrollbar for nav on very small screens */
 @media (max-width: 1024px) {
   .nav-bar {
     scrollbar-width: thin;
@@ -381,14 +369,12 @@
   }
 }
 
-/* Smooth scrolling for mobile nav */
 @media (max-width: 768px) {
   .nav-bar.open {
     scroll-behavior: smooth;
   }
 }
 
-/* Prevent horizontal scrolling on mobile */
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;

@@ -164,7 +164,7 @@
    color: #1eaaf1;
   }
 }
-/* Hide "For Author" sidebar on tablets and mobiles */
+
 @media (max-width: 1024px) {
   .sidebar.left {
     display: none;

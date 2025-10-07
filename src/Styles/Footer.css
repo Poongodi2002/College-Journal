@@ -16,7 +16,6 @@
   align-items: start;
 }
 
-/* Footer Column Styles */
 .footer-col h4 {
   font-size: 18px;
   margin-bottom: 20px;
@@ -72,7 +71,7 @@
   transform: translateX(5px);
 }
 
-/* Social Links Styles */
+
 .social-links {
   display: flex;
   gap: 12px;
@@ -100,7 +99,7 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer Bottom */
+
 .footer-bottom {
   text-align: center;
   padding-top: 30px;
@@ -115,9 +114,6 @@
   opacity: 0.9;
 }
 
-/* ================= RESPONSIVE DESIGN ================= */
-
-/* ---------- Tablets (769px - 1024px) ---------- */
 @media (max-width: 1024px) {
   .footer-container {
     grid-template-columns: 1.5fr 1fr 1fr;
@@ -135,7 +131,7 @@
   }
 }
 
-/* ---------- Small Tablets (601px - 768px) ---------- */
+
 @media (max-width: 768px) {
   .footer {
     padding: 40px 0 20px;
@@ -175,7 +171,7 @@
   }
 }
 
-/* ---------- Mobile Phones (481px - 600px) ---------- */
+
 @media (max-width: 600px) {
   .footer-container {
     grid-template-columns: 1fr;
@@ -207,7 +203,7 @@
   }
 }
 
-/* ---------- Small Mobile Phones (320px - 480px) ---------- */
+
 @media (max-width: 480px) {
   .footer {
     padding: 30px 0 15px;
@@ -252,7 +248,7 @@
   }
 }
 
-/* ---------- Very Small Mobile Phones (max-width: 320px) ---------- */
+
 @media (max-width: 320px) {
   .footer {
     padding: 25px 0 10px;
@@ -269,7 +265,7 @@
   }
 }
 
-/* Accessibility Improvements */
+
 @media (prefers-reduced-motion: reduce) {
   .footer-col ul li a,
   .social-links a {
@@ -278,7 +274,7 @@
   }
 }
 
-/* High Contrast Mode Support */
+
 @media (prefers-contrast: high) {
   .footer {
     background: #0000ff;
