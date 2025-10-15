@@ -41,7 +41,7 @@ const EditorialBoard = () => {
         <ul className="editorial-board__list">
           <li className="editorial-board__list-item">
             <p className="editorial-board__name">
-              <strong style={{color:'#1eaaf1'}}>Dr. H. Indu</strong>, Registrar, Avinashilingam Institute for Home Science and Higher Education for Women, Coimbatore, Tamil Nadu-641043
+              <strong style={{color:'#ff6600'}}>Dr. H. Indu</strong>, Registrar, Avinashilingam Institute for Home Science and Higher Education for Women, Coimbatore, Tamil Nadu-641043
             </p>
             <p className="editorial-board__email">
               Email: <a href="mailto:registrar@avinuty.ac.in">registrar@avinuty.ac.in</a>

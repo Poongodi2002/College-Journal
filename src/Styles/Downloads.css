@@ -1,11 +1,10 @@
-
 .downloads-container {
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
-  background-color: #ffffff;
+  background-color: #fdf7f0;
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.363);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333333;
   line-height: 1.8;
@@ -14,77 +13,298 @@
 .downloads-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #1eaaf1;
+  color: #ff7b00;
   margin-bottom: 20px;
+  text-align: center;
 }
-
 
 .downloads-intro {
   font-size: 1rem;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.downloads-intro strong {
+  color: #ff7b00;
+  font-weight: 600;
 }
 
 .downloads-section-title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #1eaaf1;
-  margin-bottom: 10px;
-  border-left: 4px solid #1eaaf1;
+  color: #1800ac;
+  margin-bottom: 15px;
+  border-left: 4px solid #ff7b00;
   padding-left: 10px;
 }
 
-.downloads-list-numbered {
-  list-style-type: decimal;
-  padding-left: 25px;
-  margin-bottom: 20px;
+.downloads-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
 }
 
-.downloads-list-numbered li {
-  margin-bottom: 8px;
+.downloads-list li {
   font-size: 1rem;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  padding: 8px 0;
 }
 
-.downloads-list-bulleted {
-  list-style-type: disc;
-  padding-left: 25px;
-  margin-bottom: 20px;
-}
-
-.downloads-list-bulleted li {
-  margin-bottom: 8px;
-  font-size: 1rem;
+.book-icon {
+  color: #ff7b00;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .downloads-link {
-  color: #1eaaf1;
+  color: #1800ac;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  word-break: break-word;
 }
 
 .downloads-link:hover {
   text-decoration: underline;
+  color: #ff7b00;
 }
 
-.downloads-intro strong {
-  color: #1eaaf1;
-  font-weight: 600;
-}
-
-@media (max-width: 768px) {
+@media (min-width: 1440px) {
   .downloads-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+  }
+  
+  .downloads-title {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+  }
+  
+  .downloads-intro {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .downloads-section-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  
+  .downloads-list li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .book-icon {
+    font-size: 1.3rem;
+    margin-right: 12px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .downloads-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 25px;
+  }
+  
+  .downloads-title {
+    font-size: 1.9rem;
+  }
+  
+  .downloads-section-title {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .downloads-container {
+    max-width: 90%;
+    margin: 35px auto;
+    padding: 25px;
+  }
+  
+  .downloads-title {
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+  }
+  
+  .downloads-intro {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+  
+  .downloads-section-title {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+  }
+  
+  .downloads-list li {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+  
+  .book-icon {
+    font-size: 1.1rem;
+    margin-right: 8px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .downloads-container {
+    max-width: 95%;
+    margin: 30px auto;
     padding: 20px;
   }
-
+  
   .downloads-title {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
   }
-
+  
+  .downloads-intro {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
   .downloads-section-title {
     font-size: 1.1rem;
+    margin-bottom: 10px;
+    border-left: 3px solid #ff7b00;
+    padding-left: 8px;
   }
+  
+  .downloads-list {
+    margin: 0 0 20px;
+  }
+  
+  .downloads-list li {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .book-icon {
+    font-size: 1rem;
+    margin-right: 8px;
+    margin-top: 1px;
+  }
+  
+  .downloads-link {
+    font-size: 0.9rem;
+  }
+}
 
-  .downloads-intro,
-  .downloads-list-numbered li,
-  .downloads-list-bulleted li {
+@media (min-width: 320px) and (max-width: 480px) {
+  .downloads-container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .downloads-title {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+  
+  .downloads-intro {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  .downloads-section-title {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    border-left: 2px solid #ff7b00;
+    padding-left: 6px;
+  }
+  
+  .downloads-list {
+    margin: 0 0 15px;
+  }
+  
+  .downloads-list li {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6px 0;
+  }
+  
+  .book-icon {
+    font-size: 0.9rem;
+    margin-right: 6px;
+    margin-bottom: 4px;
+    margin-top: 0;
+  }
+  
+  .downloads-link {
+    font-size: 0.85rem;
+    margin-left: 16px;
+    word-break: break-all;
+  }
+}
+
+@media (max-width: 319px) {
+  .downloads-container {
+    margin: 15px auto;
+    padding: 12px;
+    border-radius: 6px;
+  }
+  
+  .downloads-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .downloads-intro {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+  }
+  
+  .downloads-section-title {
     font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+  
+  .downloads-list li {
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+  }
+  
+  .book-icon {
+    font-size: 0.85rem;
+    margin-right: 5px;
+  }
+  
+  .downloads-link {
+    font-size: 0.8rem;
+    margin-left: 14px;
+  }
+}
+
+@media print {
+  .downloads-container {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+  }
+  
+  .downloads-link {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .book-icon {
+    color: #000;
   }
 }

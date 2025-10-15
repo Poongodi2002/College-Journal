@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './../../Styles/Archives.css';
+import { FaBookOpen } from 'react-icons/fa'; // Opened book icon
 
 const archiveData = [
   {
@@ -24,9 +25,9 @@ const Archives = () => {
 
   return (
     <div className="archives-container">
-      <h2 style={{color:'#0077cc'}}>Archives (For Online Serials Only)</h2>
+      <h2>Archives (For Online Serials Only)</h2>
       <p>
-        The <strong style={{color:'#0077cc'}}> Kaamadhenu Journal of Education Training and Development (KJETD)</strong> maintains an open-access online archive of all its published issues. Readers can access previous volumes and issues to explore high-quality research articles, case studies, reviews, and educational innovations.
+        The <strong>Kaamadhenu Journal of Education Training and Development (KJETD)</strong> maintains an open-access online archive of all its published issues. Readers can access previous volumes and issues to explore high-quality research articles, case studies, reviews, and educational innovations.
       </p>
 
       <table className="archives-table">
@@ -52,7 +53,7 @@ const Archives = () => {
                   View Full Issue
                 </button>
               </td>
-            </tr>
+             </tr>
           ))}
         </tbody>
       </table>
@@ -60,9 +61,9 @@ const Archives = () => {
       <div className="archives-notes">
         <h3>Note to Readers</h3>
         <ul>
-          <li>All issues are available for free download in PDF format.</li>
-          <li>Authors and researchers are encouraged to cite articles from past issues while preparing new manuscripts.</li>
-          <li>The Archives are regularly updated as new issues are released.</li>
+          <li><FaBookOpen className="archives-icon" /> All issues are available for free download in PDF format.</li>
+          <li><FaBookOpen className="archives-icon" /> Authors and researchers are encouraged to cite articles from past issues while preparing new manuscripts.</li>
+          <li><FaBookOpen className="archives-icon" /> The Archives are regularly updated as new issues are released.</li>
         </ul>
       </div>
 

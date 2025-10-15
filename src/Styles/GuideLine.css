@@ -1,31 +1,26 @@
-
 .guideline-container {
   max-width: 1000px;
   margin: 40px auto;
   padding: 20px;
   font-family: Arial, sans-serif;
-  color: #333;
   line-height: 1.7;
 }
 
-
 .guideline-intro {
-  background: #f0f8ff;
+  background: #fff4e6;
   padding: 25px;
-  border-left: 6px solid #1eaaf1;
+  border-left: 6px solid #f68713;
   border-radius: 8px;
   margin-bottom: 40px;
   font-size: 1.1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.363);
 }
-
 
 .guideline-sections {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 20px;
 }
-
 
 .guideline-section {
   padding: 20px;
@@ -39,22 +34,29 @@
   transform: translateY(-5px);
 }
 
-
 .guideline-section h3 {
   font-size: 1.3rem;
-  color: #1eaaf1;
+  color: #f68713;
   margin-bottom: 15px;
 }
 
-
 .guideline-section ul {
-  padding-left: 20px;
-  list-style-type: disc;
+  padding-left: 0;
+  list-style: none;
 }
 
 .guideline-section li {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.book-icon {
+  margin-right: 10px;
+  color: #f68713;
+  font-size: 18px;
+  flex-shrink: 0;
 }
 
 .guideline-section p {
@@ -67,43 +69,202 @@
   text-align: center;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1440px) {
+  .guideline-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 25px;
+  }
+  
+  .guideline-intro {
+    padding: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+  }
+  
   .guideline-sections {
-    grid-template-columns: 1fr; 
+    gap: 25px;
+  }
+  
+  .guideline-section {
+    padding: 25px;
+  }
+  
+  .guideline-section h3 {
+    font-size: 1.4rem;
+  }
+  
+  .guideline-section li,
+  .guideline-section p {
+    font-size: 1.1rem;
+  }
+  
+  .book-icon {
+    font-size: 20px;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1025px) and (max-width: 1439px) {
   .guideline-container {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .guideline-sections {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .guideline-container {
+    max-width: 90%;
+    margin: 35px auto;
+    padding: 20px;
+  }
+  
+  .guideline-sections {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  
+  .guideline-intro {
+    padding: 20px;
+    font-size: 1.05rem;
+    margin-bottom: 35px;
+  }
+  
+  .guideline-section {
+    padding: 18px;
+  }
+  
+  .guideline-section h3 {
+    font-size: 1.25rem;
+  }
+  
+  .guideline-section li,
+  .guideline-section p {
+    font-size: 0.98rem;
+  }
+  
+  .book-icon {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .guideline-container {
+    max-width: 95%;
+    margin: 30px auto;
     padding: 15px;
   }
-
+  
+  .guideline-sections {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .guideline-intro {
+    padding: 18px;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    border-left: 4px solid #f68713;
+  }
+  
   .guideline-section {
     padding: 15px;
   }
-
+  
   .guideline-section h3 {
     font-size: 1.2rem;
   }
-
+  
   .guideline-section li,
   .guideline-section p {
     font-size: 0.95rem;
   }
+  
+  .book-icon {
+    font-size: 16px;
+  }
 }
 
-@media (max-width: 480px) {
-  .guideline-intro {
-    font-size: 1rem;
-    padding: 15px;
+@media (min-width: 320px) and (max-width: 480px) {
+  .guideline-container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 12px;
   }
-
+  
+  .guideline-sections {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .guideline-intro {
+    padding: 15px;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    border-left: 3px solid #f68713;
+  }
+  
+  .guideline-section {
+    padding: 12px;
+  }
+  
   .guideline-section h3 {
     font-size: 1.1rem;
+    margin-bottom: 12px;
   }
-
-  .guideline-section li,
+  
+  .guideline-section li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    align-items: flex-start;
+  }
+  
   .guideline-section p {
     font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+  
+  .book-icon {
+    font-size: 14px;
+    margin-right: 8px;
+    margin-top: 2px;
+  }
+}
+
+@media (max-width: 319px) {
+  .guideline-container {
+    margin: 15px auto;
+    padding: 10px;
+  }
+  
+  .guideline-sections {
+    gap: 10px;
+  }
+  
+  .guideline-intro {
+    padding: 12px;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .guideline-section {
+    padding: 10px;
+  }
+  
+  .guideline-section h3 {
+    font-size: 1rem;
+  }
+  
+  .guideline-section li,
+  .guideline-section p {
+    font-size: 0.85rem;
+  }
+  
+  .book-icon {
+    font-size: 13px;
   }
 }

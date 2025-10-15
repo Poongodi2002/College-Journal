@@ -1,11 +1,10 @@
-
 .ethics-policy-container {
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
-  background-color: #ffffff;
+  background-color: #fff8f2;
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.363);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333333;
   line-height: 1.8;
@@ -14,56 +13,265 @@
 .ethics-policy-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #1eaaf1;
+  color: #ff6600;
   margin-bottom: 20px;
+  text-align: center;
 }
-
 
 .ethics-policy-intro {
   font-size: 1rem;
   margin-bottom: 20px;
+  text-align: justify;
+}
+
+.ethics-policy-intro strong {
+  color: #1800ac;
+  font-weight: 600;
 }
 
 .ethics-section-title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #1eaaf1;
+  color: #1800ac;
   margin-bottom: 10px;
-  border-left: 4px solid #1eaaf1;
+  border-left: 4px solid #ff6600;
   padding-left: 10px;
 }
 
 .ethics-list {
-  list-style-type: disc;
-  padding-left: 25px;
+  list-style-type: none;
+  padding-left: 0;
   margin-bottom: 20px;
 }
 
 .ethics-list li {
   margin-bottom: 8px;
   font-size: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
 }
 
-.ethics-policy-intro strong {
-  color: #1eaaf1;
-  font-weight: 600;
+.book-icon {
+  color: #ff6600;
+  margin-top: 4px;
+  flex-shrink: 0;
 }
 
-@media (max-width: 768px) {
+/* Large Desktop View (1440px and above) */
+@media (min-width: 1440px) {
   .ethics-policy-container {
-    padding: 20px;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
   }
-
+  
   .ethics-policy-title {
-    font-size: 1.75rem;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
   }
-
+  
+  .ethics-policy-intro {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+  
   .ethics-section-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+  
+  .ethics-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+  
+  .book-icon {
     font-size: 1.1rem;
   }
+}
 
-  .ethics-policy-intro,
+/* Standard Desktop View (1025px - 1439px) */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .ethics-policy-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 25px;
+  }
+  
+  .ethics-policy-title {
+    font-size: 1.9rem;
+  }
+  
+  .ethics-section-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet View (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .ethics-policy-container {
+    max-width: 90%;
+    margin: 35px auto;
+    padding: 25px;
+  }
+  
+  .ethics-policy-title {
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+  }
+  
+  .ethics-policy-intro {
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+  }
+  
+  .ethics-section-title {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+    border-left: 3px solid #ff6600;
+    padding-left: 8px;
+  }
+  
+  .ethics-list {
+    margin-bottom: 18px;
+  }
+  
   .ethics-list li {
     font-size: 0.95rem;
+    margin-bottom: 6px;
+    gap: 6px;
+  }
+  
+  .book-icon {
+    font-size: 0.95rem;
+    margin-top: 3px;
+  }
+}
+
+/* Mobile View (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .ethics-policy-container {
+    max-width: 95%;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  .ethics-policy-title {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+  
+  .ethics-policy-intro {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .ethics-section-title {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    border-left: 3px solid #ff6600;
+    padding-left: 8px;
+  }
+  
+  .ethics-list {
+    margin-bottom: 15px;
+  }
+  
+  .ethics-list li {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    gap: 6px;
+    align-items: flex-start;
+  }
+  
+  .book-icon {
+    font-size: 0.9rem;
+    margin-top: 2px;
+  }
+}
+
+/* Small Mobile View (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .ethics-policy-container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .ethics-policy-title {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+  
+  .ethics-policy-intro {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  .ethics-section-title {
+    font-size: 1rem;
+    margin-bottom: 6px;
+    border-left: 2px solid #ff6600;
+    padding-left: 6px;
+  }
+  
+  .ethics-list {
+    margin-bottom: 12px;
+  }
+  
+  .ethics-list li {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .ethics-list li .book-icon {
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
+  
+  .book-icon {
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra Small Mobile View (below 320px) */
+@media (max-width: 319px) {
+  .ethics-policy-container {
+    margin: 15px auto;
+    padding: 12px;
+    border-radius: 6px;
+  }
+  
+  .ethics-policy-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .ethics-policy-intro {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .ethics-section-title {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+  }
+  
+  .ethics-list li {
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+  }
+  
+  .book-icon {
+    font-size: 0.8rem;
   }
 }

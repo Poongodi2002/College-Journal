@@ -29,17 +29,14 @@
     transform: scale(1.1);
   }
 }
-/* .main-home {
-  font-family: Arial, sans-serif;
-} */
 
 .home-first-section {
   position: relative;
   text-align: center;
   padding: 40px;
   background: url('/journal-bg.jpg') no-repeat center/cover;
-  color: white;
-  font-size: 25px
+  color: #ffffff; 
+  font-size: 25px;
 }
 
 .home-content {
@@ -51,15 +48,15 @@
 
 .sidebar {
   width: 20%;
-  background: #f8f8f8;
+  background: #fdf5ee; 
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 5px;
 }
 
 .sidebar h4 {
-  background: #1eaaf1;
-  color: #fff;
+  background: #1800ac;
+  color: #ffffff;      
   padding: 8px;
   margin-bottom: 10px;
   border-radius: 3px;
@@ -74,6 +71,11 @@
   padding: 5px 0;
   border-bottom: 1px dotted #ddd;
   font-size: 14px;
+  color: #1800ac;
+}
+
+.sidebar ul li:hover {
+  color: #f68713; 
 }
 
 .center-content {
@@ -81,9 +83,18 @@
 }
 
 .center-content h2 {
-  border-bottom: 2px solid #0056d2;
+  border-bottom: 2px solid #f68713; 
   display: inline-block;
   padding-bottom: 5px;
+  color: #1800ac; 
+}
+
+.center-content h3 {
+  color: #f68713; 
+}
+
+.center-content p {
+  color: #333; 
 }
 
 .services {
@@ -93,7 +104,7 @@
 
 .services li::before {
   content: "✔ ";     
-  color: #1eaaf1; 
+  color: #f68713; 
   font-weight: bold;
 }
 
@@ -161,13 +172,13 @@
 
   .services li::before {
     content: "• "; 
-   color: #1eaaf1;
+    color: #f68713;
   }
 }
 
 @media (max-width: 1024px) {
   .sidebar.left {
-    display: none;
+    display: none; 
   }
 
   .home-content {

@@ -4,28 +4,30 @@ import "../../Styles/Contact.css";
 const Contact = () => {
   return (
     <div className="contact-container">
-      <h2 className="contact-title" style={{color:'#1eaaf1'}}>Contact Us</h2>
+      <h2 className="contact-title">Contact Us</h2>
       <p className="journal-name">
-        <strong style={{color:'#1eaaf1'}}>Kaamadhenu Journal of Education Training and Development (KJETD)</strong>
+        <strong className="highlight-text">
+          Kaamadhenu Journal of Education Training and Development (KJETD)
+        </strong>
       </p>
       <p>
-        <strong>Address:</strong> Kaamadhenu College of Education, Sathyamangalam, 
+        <strong style={{color:'#ff7b00'}}>Address:</strong> Kaamadhenu College of Education, Sathyamangalam, 
         Erode, Tamil Nadu, India - 638 503.
       </p>
       <p>
-        <strong>Email:</strong>{" "}
+        <strong style={{color:'#ff7b00'}}>Email:</strong>{" "}
         <a href="mailto:principalkce@kascsathy.ac.in">
           principalkce@kascsathy.ac.in
         </a>
       </p>
       <p>
-        <strong>Website:</strong>{" "}
+        <strong style={{color:'#ff7b00'}}>Website:</strong>{" "}
         <a href="#" target="_blank" rel="noopener noreferrer">
           office@kasccathy.ac.in
         </a>
       </p>
       <p>
-        <strong>Phone:</strong>+91 4295 - 223743
+        <strong style={{color:'#ff7b00'}}>Phone:</strong> +91 4295 - 223743
       </p>
     </div>
   );

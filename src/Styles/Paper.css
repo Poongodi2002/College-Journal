@@ -1,30 +1,28 @@
-
 .callofpapers-container {
   max-width: 1000px;
   margin: 40px auto;
   padding: 20px;
   font-family: Arial, sans-serif;
-  color: #333;
   line-height: 1.7;
 }
 
 .callofpapers-intro {
-  background: #e6f0ff;
+  background: #fff4e6;
   padding: 25px;
-  border-left: 6px solid #1eaaf1;
+  border-left: 6px solid #f68713;
   border-radius: 10px;
   margin-bottom: 35px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.363);
   transition: transform 0.3s ease;
 }
-
+ 
 .callofpapers-intro:hover {
   transform: translateY(-5px);
 }
 
 .callofpapers-intro h2 {
   font-size: 1.8rem;
-  color: #1eaaf1;
+  color: #f68713;
   margin-bottom: 15px;
 }
 
@@ -32,17 +30,16 @@
   font-size: 1.1rem;
 }
 
-
 .callofpapers-details {
   background: #fff;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.363);
 }
 
 .callofpapers-details h3 {
   font-size: 1.5rem;
-  color: #1eaaf1;
+  color: #f68713;
   margin-bottom: 15px;
 }
 
@@ -54,15 +51,233 @@
 .callofpapers-details li {
   margin-bottom: 10px;
   font-size: 1rem;
+  color: #1800ac;
 }
 
-@media (max-width: 768px) {
+
+@media (min-width: 1200px) {
   .callofpapers-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px;
+  }
+}
+@media (max-width: 1199px) {
+  .callofpapers-container {
+    max-width: 950px;
+    margin: 35px auto;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .callofpapers-container {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  .callofpapers-intro {
+    padding: 22px;
+    margin-bottom: 30px;
+  }
+  
+  .callofpapers-intro h2 {
+    font-size: 1.7rem;
+  }
+  
+  .callofpapers-intro p {
+    font-size: 1.05rem;
+  }
+  
+  .callofpapers-details {
+    padding: 22px;
+  }
+  
+  .callofpapers-details h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .callofpapers-container {
+    max-width: 95%;
+    margin: 25px auto;
+    padding: 18px;
+  }
+  
+  .callofpapers-intro {
+    padding: 20px;
+    margin-bottom: 25px;
+    border-left-width: 5px;
+  }
+  
+  .callofpapers-intro h2 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+  }
+  
+  .callofpapers-intro p {
+    font-size: 1rem;
+  }
+  
+  .callofpapers-details {
+    padding: 20px;
+  }
+  
+  .callofpapers-details h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  
+  .callofpapers-details li {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 599px) {
+  .callofpapers-container {
+    margin: 20px auto;
     padding: 15px;
   }
+  
+  .callofpapers-intro {
+    padding: 18px;
+    margin-bottom: 22px;
+    border-left-width: 4px;
+  }
+  
+  .callofpapers-intro h2 {
+    font-size: 1.5rem;
+  }
+  
+  .callofpapers-intro p {
+    font-size: 0.95rem;
+  }
+  
+  .callofpapers-details {
+    padding: 18px;
+  }
+  
+  .callofpapers-details h3 {
+    font-size: 1.25rem;
+  }
+  
+  .callofpapers-details li {
+    font-size: 0.92rem;
+  }
+}
 
-  .callofpapers-intro, 
+@media (max-width: 479px) {
+  .callofpapers-container {
+    margin: 15px auto;
+    padding: 12px;
+  }
+  
+  .callofpapers-intro {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .callofpapers-intro h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .callofpapers-intro p {
+    font-size: 0.9rem;
+  }
+  
   .callofpapers-details {
     padding: 15px;
+  }
+  
+  .callofpapers-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+  
+  .callofpapers-details li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 374px) {
+  .callofpapers-container {
+    margin: 12px auto;
+    padding: 10px;
+  }
+  
+  .callofpapers-intro {
+    padding: 12px;
+    margin-bottom: 18px;
+  }
+  
+  .callofpapers-intro h2 {
+    font-size: 1.3rem;
+  }
+  
+  .callofpapers-intro p {
+    font-size: 0.88rem;
+  }
+  
+  .callofpapers-details {
+    padding: 12px;
+  }
+  
+  .callofpapers-details h3 {
+    font-size: 1.15rem;
+  }
+  
+  .callofpapers-details li {
+    font-size: 0.88rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .callofpapers-container {
+    max-width: 85%;
+    margin: 35px auto;
+  }
+  
+  .callofpapers-intro h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  .callofpapers-container {
+    max-width: 88%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .callofpapers-intro {
+    transition: none;
+  }
+  
+  .callofpapers-intro:hover {
+    transform: none;
+  }
+}
+
+@media print {
+  .callofpapers-container {
+    margin: 20px auto;
+    padding: 0;
+    box-shadow: none;
+    max-width: 100%;
+  }
+  
+  .callofpapers-intro,
+  .callofpapers-details {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    page-break-inside: avoid;
+  }
+  
+  .callofpapers-intro:hover {
+    transform: none;
   }
 }

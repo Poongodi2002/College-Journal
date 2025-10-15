@@ -1,24 +1,20 @@
-
 .aims-container {
   max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
   font-family: Arial, sans-serif;
-  color: #333;
   line-height: 1.7;
 }
- 
 
 .aims-intro {
-  background: #f9f9f9;
+  background: #fdf5ee;
   padding: 25px;
-  border-left: 6px solid #0077cc;
+  border-left: 6px solid #f68713;
   border-radius: 8px;
   margin-bottom: 40px;
   font-size: 1.1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.363);
+} 
 
 .aims-section {
   display: flex;
@@ -50,103 +46,255 @@
 .aims-text h3 {
   font-size: 1.4rem;
   margin-bottom: 15px;
-  color: #1eaaf1;
+  color: #f68713;
 }
 
 .aims-text ul {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
 }
 
 .aims-text li {
-  margin-bottom: 10px;
-  font-size: 1rem;
-}
-
-
-.aims-container {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  color: #333;
-  line-height: 1.7;
-}
-
-
-.aims-intro {
-  background: #f9f9f9;
-  padding: 25px;
-  border-left: 6px solid #1eaaf1;
-  border-radius: 8px;
-  margin-bottom: 40px;
-  font-size: 1.1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-.aims-section {
   display: flex;
   align-items: center;
-  gap: 30px;
-  margin-bottom: 40px;
-}
-
-.aims-section.reverse {
-  flex-direction: row-reverse;
-}
-
-.aims-image {
-  flex: 1;
-}
-
-.aims-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  object-fit: cover;
-}
-
-.aims-text {
-  flex: 1;
-}
-
-.aims-text h3 {
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-  color: #1eaaf1;
-}
-
-.aims-text ul {
-  list-style: disc;
-  padding-left: 20px;
-}
-
-.aims-text li {
+  gap: 8px;
+  color: #1800ac;
   margin-bottom: 10px;
   font-size: 1rem;
 }
 
-
-@media (max-width: 768px) {
+@media (min-width: 1440px) {
+  .aims-container {
+    max-width: 1400px;
+    margin: 60px auto;
+    padding: 30px;
+  }
+  
   .aims-section {
-    flex-direction: column;   
-    text-align: center;       
+    gap: 50px;
+    margin-bottom: 60px;
   }
-
-  .aims-section.reverse {
-    flex-direction: column;   
+  
+  .aims-intro {
+    padding: 35px;
+    margin-bottom: 60px;
+    font-size: 1.3rem;
+    border-left: 8px solid #f68713;
   }
-
-  .aims-text {
-    margin-top: 20px;
-  }
-
+  
   .aims-text h3 {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
+    margin-bottom: 25px;
   }
+  
+  .aims-text li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    gap: 12px;
+  }
+  
+  .aims-image img {
+    border-radius: 12px;
+  }
+}
 
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .aims-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 25px;
+  }
+  
+  .aims-section {
+    gap: 35px;
+    margin-bottom: 45px;
+  }
+  
+  .aims-intro {
+    padding: 25px;
+    margin-bottom: 45px;
+    font-size: 1.1rem;
+  }
+  
+  .aims-text h3 {
+    font-size: 1.5rem;
+  }
+  
+  .aims-text li {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .aims-container {
+    max-width: 95%;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  .aims-section {
+    gap: 25px;
+    margin-bottom: 35px;
+  }
+  
+  .aims-intro {
+    padding: 20px;
+    margin-bottom: 35px;
+    font-size: 1rem;
+    border-left: 5px solid #f68713;
+  }
+  
+  .aims-text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+  
   .aims-text li {
     font-size: 0.95rem;
+    margin-bottom: 8px;
+    gap: 6px;
+  }
+  
+  .aims-image img {
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .aims-container {
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 100%;
+  }
+  
+  .aims-section {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .aims-section.reverse {
+    flex-direction: column;
+  }
+  
+  .aims-intro {
+    padding: 18px;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+    border-left: 4px solid #f68713;
+  }
+  
+  .aims-image,
+  .aims-text {
+    flex: none;
+    width: 100%;
+  }
+  
+  .aims-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .aims-text li {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    justify-content: center;
+  }
+  
+  .aims-image img {
+    border-radius: 8px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .aims-container {
+    margin: 15px auto;
+    padding: 10px;
+    max-width: 100%;
+  }
+  
+  .aims-section {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .aims-section.reverse {
+    flex-direction: column;
+  }
+  
+  .aims-intro {
+    padding: 15px;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+    border-left: 3px solid #f68713;
+    text-align: left;
+  }
+  
+  .aims-image,
+  .aims-text {
+    flex: none;
+    width: 100%;
+  }
+  
+  .aims-text h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .aims-text li {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
+  .aims-image img {
+    border-radius: 6px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 319px) {
+  .aims-container {
+    margin: 10px auto;
+    padding: 8px;
+    max-width: 100%;
+  }
+  
+  .aims-section {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .aims-intro {
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    border-left: 2px solid #f68713;
+  }
+  
+  .aims-text h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  
+  .aims-text li {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+  
+  .aims-image img {
+    border-radius: 5px;
   }
 }

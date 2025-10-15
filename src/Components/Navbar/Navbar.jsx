@@ -42,15 +42,15 @@ const Navbar = () => {
           </span>
         </div>
         <div className="top-right">
-          <a href="#"><FaYoutube /></a>
-          <a href="#"><FaFacebookF /></a>
-          <a href="#"><FaInstagram /></a>
+          <a href="#" style={{color:'#ffffffff'}}><FaYoutube /></a>
+          <a href="#" style={{color:'#ffffffff'}}><FaFacebookF /></a>
+          <a href="#" style={{color:'#ffffffff'}}><FaInstagram /></a>
         </div>
       </div>
  
       {/* Main Header */}
       <div className="main-header">
-        <img src="/LOGO.jpeg" alt="Kaamadhenu Logo" className="logo" />
+        <img src="/KLOGO.jpeg" alt="Kaamadhenu Logo" className="logo" />
         <div className="college-info">
           <h2>KAAMADHENU JOURNAL OF EDUCATION TRAINING AND DEVELOPMENT</h2>
           <p>
